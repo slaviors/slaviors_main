@@ -3,14 +3,13 @@
 import Image from "next/image"
 
 export function PageHero({ 
-  icon: Icon, 
   title, 
   description, 
   lastUpdated,
   backgroundImage 
 }) {
   return (
-    <section className="relative pt-32 pb-16 overflow-hidden">
+    <section className="relative pt-32 pb-20 overflow-hidden">
       {/* Background Image with Overlay */}
       {backgroundImage && (
         <>
@@ -34,31 +33,43 @@ export function PageHero({
       )}
 
       {/* Content */}
-      <div className="relative z-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          {Icon && (
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-[#815854] rounded-full mb-6 shadow-lg">
-              <Icon className="w-8 h-8 text-white" />
-            </div>
-          )}
-          
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            {title}
-          </h1>
-          
-          {description && (
-            <p className="text-xl text-gray-700 mb-2">
-              {description}
-            </p>
-          )}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col items-start space-y-6">
           
           {lastUpdated && (
-            <p className="text-sm text-gray-600">
-              Terakhir diperbarui: {lastUpdated}
-            </p>
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-gray-200 shadow-sm">
+              <div className="w-2 h-2 bg-[#815854] rounded-full animate-pulse"></div>
+              <span className="text-sm font-medium text-gray-700">
+                Diperbarui {lastUpdated}
+              </span>
+            </div>
           )}
+
+          {/* Text Content */}
+          <div className="space-y-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+              {title}
+            </h1>
+            
+            {description && (
+              <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-2xl">
+                {description}
+              </p>
+            )}
+
+            {/* Decorative Line */}
+            <div className="flex items-center gap-3 pt-2">
+              <div className="h-1 w-20 bg-[#815854] rounded-full"></div>
+              <div className="h-1 w-12 bg-[#815854]/60 rounded-full"></div>
+              <div className="h-1 w-6 bg-[#815854]/30 rounded-full"></div>
+            </div>
+          </div>
+
         </div>
       </div>
+
+      {/* Decorative Elements */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#815854]/20 to-transparent"></div>
     </section>
   )
 }

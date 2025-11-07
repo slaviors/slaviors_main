@@ -1,48 +1,22 @@
 "use client"
-
-import { Shield, CheckCircle, Clock, AlertTriangle } from "lucide-react"
 import { PageHero } from "@/components/ui/page-hero"
-import { StatsGrid } from "@/components/ui/stats-grid"
 
 export default function SLAPage() {
-  const lastUpdated = "1 November 2024"
-
-  // Stats data untuk highlight section
-  const slaStats = [
-    {
-      icon: CheckCircle,
-      value: "99.9%",
-      label: "Uptime Guarantee"
-    },
-    {
-      icon: Clock,
-      value: "24/7",
-      label: "Support Tersedia"
-    },
-    {
-      icon: AlertTriangle,
-      value: "30 Menit",
-      label: "Response Time"
-    }
-  ]
+  const lastUpdated = "8 November 2025"
 
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <PageHero
-        icon={Shield}
         title="Service Level Agreement (SLA)"
-        description="Komitmen kami untuk memberikan layanan terbaik"
+        description="Komitmen kami untuk memberikan layanan terbaik dengan jaminan uptime 99.9%, support 24/7, dan response time yang cepat untuk semua pelanggan Slaviors Group."
         lastUpdated={lastUpdated}
         backgroundImage="https://images.pexels.com/photos/3184416/pexels-photo-3184416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
 
-      {/* Stats Highlights */}
-      <StatsGrid stats={slaStats} />
-
       {/* Main Content */}
       <section className="py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
             
             {/* 1. Definisi */}
