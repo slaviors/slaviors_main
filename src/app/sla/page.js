@@ -21,7 +21,7 @@ export default function SLAPage() {
             
             {/* 1. Definisi */}
             <div className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">1. Definisi</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">1. Definisi</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
                 Service Level Agreement (SLA) ini mendefinisikan tingkat layanan yang dijanjikan oleh 
                 Slaviors Group kepada pelanggan kami. Dokumen ini mencakup jaminan uptime, response time, 
@@ -37,54 +37,54 @@ export default function SLAPage() {
 
             {/* 2. Uptime Guarantee */}
             <div className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">2. Jaminan Uptime</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">2. Jaminan Uptime</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
                 Slaviors Group menjamin uptime server sebesar <strong>99.9%</strong> untuk semua layanan hosting. 
                 Uptime dihitung berdasarkan waktu server dapat diakses dalam satu bulan kalender.
               </p>
               
-              <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">2.1. Perhitungan Uptime</h3>
-              <div className="bg-white border border-gray-200 rounded-lg overflow-hidden mb-4">
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mt-6 mb-3">2.1. Perhitungan Uptime</h3>
+              <div className="bg-white border border-gray-200 rounded-lg overflow-x-auto mb-4">
                 <table className="min-w-full divide-y divide-gray-200">
                   <thead className="bg-[#F9EBDE]">
                     <tr>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider">
+                      <th className="px-3 sm:px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider">
                         Uptime Persentase
                       </th>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider">
+                      <th className="px-3 sm:px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider">
                         Downtime Per Bulan
                       </th>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider">
+                      <th className="px-3 sm:px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider">
                         Kompensasi
                       </th>
                     </tr>
                   </thead>
                   <tbody className="bg-white divide-y divide-gray-200">
                     <tr>
-                      <td className="px-6 py-4 text-sm text-gray-700">99.9% - 100%</td>
-                      <td className="px-6 py-4 text-sm text-gray-700">0 - 43 menit</td>
-                      <td className="px-6 py-4 text-sm text-gray-700">Tidak ada</td>
+                      <td className="px-3 sm:px-6 py-4 text-sm text-gray-700 whitespace-nowrap">99.9% - 100%</td>
+                      <td className="px-3 sm:px-6 py-4 text-sm text-gray-700 whitespace-nowrap">0 - 43 menit</td>
+                      <td className="px-3 sm:px-6 py-4 text-sm text-gray-700 whitespace-nowrap">Tidak ada</td>
                     </tr>
                     <tr className="bg-gray-50">
-                      <td className="px-6 py-4 text-sm text-gray-700">99.0% - 99.8%</td>
-                      <td className="px-6 py-4 text-sm text-gray-700">44 menit - 7.2 jam</td>
-                      <td className="px-6 py-4 text-sm font-medium text-[#815854]">10% kredit layanan</td>
+                      <td className="px-3 sm:px-6 py-4 text-sm text-gray-700 whitespace-nowrap">99.0% - 99.8%</td>
+                      <td className="px-3 sm:px-6 py-4 text-sm text-gray-700 whitespace-nowrap">44 menit - 7.2 jam</td>
+                      <td className="px-3 sm:px-6 py-4 text-sm font-medium text-[#815854] whitespace-nowrap">10% kredit layanan</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 text-sm text-gray-700">95.0% - 98.9%</td>
-                      <td className="px-6 py-4 text-sm text-gray-700">7.3 jam - 36 jam</td>
-                      <td className="px-6 py-4 text-sm font-medium text-[#815854]">25% kredit layanan</td>
+                      <td className="px-3 sm:px-6 py-4 text-sm text-gray-700 whitespace-nowrap">95.0% - 98.9%</td>
+                      <td className="px-3 sm:px-6 py-4 text-sm text-gray-700 whitespace-nowrap">7.3 jam - 36 jam</td>
+                      <td className="px-3 sm:px-6 py-4 text-sm font-medium text-[#815854] whitespace-nowrap">25% kredit layanan</td>
                     </tr>
                     <tr className="bg-gray-50">
-                      <td className="px-6 py-4 text-sm text-gray-700">&lt; 95.0%</td>
-                      <td className="px-6 py-4 text-sm text-gray-700">&gt; 36 jam</td>
-                      <td className="px-6 py-4 text-sm font-medium text-[#815854]">50% kredit layanan</td>
+                      <td className="px-3 sm:px-6 py-4 text-sm text-gray-700 whitespace-nowrap">&lt; 95.0%</td>
+                      <td className="px-3 sm:px-6 py-4 text-sm text-gray-700 whitespace-nowrap">&gt; 36 jam</td>
+                      <td className="px-3 sm:px-6 py-4 text-sm font-medium text-[#815854] whitespace-nowrap">50% kredit layanan</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
 
-              <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">2.2. Pengecualian</h3>
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mt-6 mb-3">2.2. Pengecualian</h3>
               <p className="text-gray-700 leading-relaxed mb-2">
                 Downtime yang disebabkan oleh hal-hal berikut tidak termasuk dalam perhitungan SLA:
               </p>
@@ -99,47 +99,47 @@ export default function SLAPage() {
 
             {/* 3. Response Time */}
             <div className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">3. Waktu Respons Support</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">3. Waktu Respons Support</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
                 Kami berkomitmen untuk merespons tiket support Anda dengan cepat sesuai dengan 
                 tingkat prioritas masalah.
               </p>
               
-              <div className="bg-white border border-gray-200 rounded-lg overflow-hidden mb-4">
+              <div className="bg-white border border-gray-200 rounded-lg overflow-x-auto mb-4">
                 <table className="min-w-full divide-y divide-gray-200">
                   <thead className="bg-[#F9EBDE]">
                     <tr>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider">
+                      <th className="px-3 sm:px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider">
                         Tingkat Prioritas
                       </th>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider">
+                      <th className="px-3 sm:px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider">
                         Deskripsi
                       </th>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider">
+                      <th className="px-3 sm:px-6 py-3 text-left text-xs font-medium text-gray-900 uppercase tracking-wider">
                         Response Time
                       </th>
                     </tr>
                   </thead>
                   <tbody className="bg-white divide-y divide-gray-200">
                     <tr>
-                      <td className="px-6 py-4 text-sm font-medium text-red-600">Critical</td>
-                      <td className="px-6 py-4 text-sm text-gray-700">Server down, website tidak dapat diakses</td>
-                      <td className="px-6 py-4 text-sm text-gray-700">15 menit</td>
+                      <td className="px-3 sm:px-6 py-4 text-sm font-medium text-red-600 whitespace-nowrap">Critical</td>
+                      <td className="px-3 sm:px-6 py-4 text-sm text-gray-700">Server down, website tidak dapat diakses</td>
+                      <td className="px-3 sm:px-6 py-4 text-sm text-gray-700 whitespace-nowrap">15 menit</td>
                     </tr>
                     <tr className="bg-gray-50">
-                      <td className="px-6 py-4 text-sm font-medium text-orange-600">High</td>
-                      <td className="px-6 py-4 text-sm text-gray-700">Masalah serius yang mempengaruhi operasional</td>
-                      <td className="px-6 py-4 text-sm text-gray-700">30 menit</td>
+                      <td className="px-3 sm:px-6 py-4 text-sm font-medium text-orange-600 whitespace-nowrap">High</td>
+                      <td className="px-3 sm:px-6 py-4 text-sm text-gray-700">Masalah serius yang mempengaruhi operasional</td>
+                      <td className="px-3 sm:px-6 py-4 text-sm text-gray-700 whitespace-nowrap">30 menit</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 text-sm font-medium text-yellow-600">Medium</td>
-                      <td className="px-6 py-4 text-sm text-gray-700">Masalah yang tidak menghambat operasional</td>
-                      <td className="px-6 py-4 text-sm text-gray-700">2 jam</td>
+                      <td className="px-3 sm:px-6 py-4 text-sm font-medium text-yellow-600 whitespace-nowrap">Medium</td>
+                      <td className="px-3 sm:px-6 py-4 text-sm text-gray-700">Masalah yang tidak menghambat operasional</td>
+                      <td className="px-3 sm:px-6 py-4 text-sm text-gray-700 whitespace-nowrap">2 jam</td>
                     </tr>
                     <tr className="bg-gray-50">
-                      <td className="px-6 py-4 text-sm font-medium text-green-600">Low</td>
-                      <td className="px-6 py-4 text-sm text-gray-700">Pertanyaan umum dan request non-urgent</td>
-                      <td className="px-6 py-4 text-sm text-gray-700">24 jam</td>
+                      <td className="px-3 sm:px-6 py-4 text-sm font-medium text-green-600 whitespace-nowrap">Low</td>
+                      <td className="px-3 sm:px-6 py-4 text-sm text-gray-700">Pertanyaan umum dan request non-urgent</td>
+                      <td className="px-3 sm:px-6 py-4 text-sm text-gray-700 whitespace-nowrap">24 jam</td>
                     </tr>
                   </tbody>
                 </table>
@@ -148,7 +148,7 @@ export default function SLAPage() {
 
             {/* 4. Maintenance */}
             <div className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">4. Scheduled Maintenance</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">4. Scheduled Maintenance</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
                 Maintenance terjadwal dilakukan untuk memastikan keamanan dan performa optimal server. 
                 Kami akan memberikan notifikasi minimal <strong>48 jam</strong> sebelum maintenance dilakukan.
@@ -163,12 +163,12 @@ export default function SLAPage() {
 
             {/* 5. Kompensasi */}
             <div className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">5. Proses Klaim Kompensasi</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">5. Proses Klaim Kompensasi</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
                 Jika terjadi pelanggaran SLA, Anda dapat mengajukan klaim kompensasi dengan ketentuan sebagai berikut:
               </p>
               
-              <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">5.1. Cara Mengajukan Klaim</h3>
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mt-6 mb-3">5.1. Cara Mengajukan Klaim</h3>
               <ol className="list-decimal list-inside space-y-2 text-gray-700 ml-4 mb-6">
                 <li>Buat tiket support dengan subject "SLA Claim"</li>
                 <li>Sertakan bukti downtime (screenshot, monitoring report, dll)</li>
@@ -176,7 +176,7 @@ export default function SLAPage() {
                 <li>Tim kami akan melakukan verifikasi dalam 3-5 hari kerja</li>
               </ol>
 
-              <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">5.2. Bentuk Kompensasi</h3>
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mt-6 mb-3">5.2. Bentuk Kompensasi</h3>
               <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
                 <li>Kompensasi diberikan dalam bentuk <strong>service credit</strong></li>
                 <li>Credit dapat digunakan untuk perpanjangan layanan atau upgrade</li>
@@ -187,7 +187,7 @@ export default function SLAPage() {
 
             {/* 6. Monitoring */}
             <div className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">6. Monitoring & Reporting</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">6. Monitoring & Reporting</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
                 Kami menggunakan sistem monitoring 24/7 untuk memastikan uptime server. Status server 
                 dapat dilihat secara real-time di halaman status kami.
@@ -198,7 +198,7 @@ export default function SLAPage() {
                 </p>
                 <a 
                   href="/status" 
-                  className="inline-block px-6 py-3 bg-[#815854] text-white font-semibold rounded-lg hover:bg-[#6d4a47] transition-colors"
+                  className="inline-block px-4 sm:px-6 py-3 bg-[#815854] text-white font-semibold rounded-lg hover:bg-[#6d4a47] transition-colors text-sm sm:text-base"
                 >
                   Lihat Status Server →
                 </a>
@@ -207,18 +207,18 @@ export default function SLAPage() {
 
             {/* 7. Kontak */}
             <div className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">7. Hubungi Kami</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">7. Hubungi Kami</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
                 Jika Anda memiliki pertanyaan mengenai SLA atau ingin mengajukan klaim, silakan hubungi kami:
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="bg-white border border-gray-200 rounded-lg p-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="bg-white border border-gray-200 rounded-lg p-4 sm:p-6">
                   <h4 className="font-semibold text-gray-900 mb-2">Email Support</h4>
-                  <a href="mailto:support@slaviors.id" className="text-[#815854] hover:underline">
+                  <a href="mailto:support@slaviors.id" className="text-[#815854] hover:underline break-all">
                     support@slaviors.id
                   </a>
                 </div>
-                <div className="bg-white border border-gray-200 rounded-lg p-6">
+                <div className="bg-white border border-gray-200 rounded-lg p-4 sm:p-6">
                   <h4 className="font-semibold text-gray-900 mb-2">Ticket System</h4>
                   <a href="/support/ticket" className="text-[#815854] hover:underline">
                     Buat Tiket Support
