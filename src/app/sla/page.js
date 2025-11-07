@@ -230,34 +230,6 @@ export default function SLAPage() {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="bg-[#F9EBDE] py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Butuh Bantuan?
-          </h2>
-          <p className="text-lg text-gray-700 mb-8">
-            Tim support kami siap membantu Anda 24/7
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/support/ticket"
-              className="px-8 py-3 bg-[#815854] text-white font-semibold rounded-lg hover:bg-[#6d4a47] transition-colors"
-            >
-              Buat Tiket Support
-            </a>
-            <a
-              href="https://wa.me/6281234567890"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-3 bg-white text-[#815854] font-semibold border-2 border-[#815854] rounded-lg hover:bg-[#815854] hover:text-white transition-colors"
-            >
-              Chat via WhatsApp
-            </a>
-          </div>
-        </div>
-      </section>
     </div>
   )
 }

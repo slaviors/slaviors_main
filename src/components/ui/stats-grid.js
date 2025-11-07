@@ -3,7 +3,7 @@
 export function StatsGrid({ stats }) {
   return (
     <section className="py-12 border-b border-gray-100 bg-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {stats.map((stat, index) => {
             const Icon = stat.icon
