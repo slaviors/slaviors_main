@@ -269,7 +269,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/kontak"
+                  href="/contact"
                   className="text-sm text-gray-700 hover:text-[#815854] transition-colors"
                 >
                   Kontak Kami
