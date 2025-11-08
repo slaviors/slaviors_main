@@ -318,32 +318,6 @@ export default function TermsPage() {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="bg-[#F9EBDE] py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-            Siap Memulai?
-          </h2>
-          <p className="text-base sm:text-lg text-gray-700 mb-8">
-            Daftar sekarang dan dapatkan layanan hosting terbaik dengan jaminan SLA 99.9%
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/register"
-              className="px-6 sm:px-8 py-3 bg-[#815854] text-white font-semibold rounded-lg hover:bg-[#6d4a47] transition-colors text-sm sm:text-base"
-            >
-              Daftar Sekarang
-            </a>
-            <a
-              href="/harga"
-              className="px-6 sm:px-8 py-3 bg-white text-[#815854] font-semibold border-2 border-[#815854] rounded-lg hover:bg-[#815854] hover:text-white transition-colors text-sm sm:text-base"
-            >
-              Lihat Harga
-            </a>
-          </div>
-        </div>
-      </section>
     </div>
   )
 }

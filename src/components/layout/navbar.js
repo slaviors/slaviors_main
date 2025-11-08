@@ -128,6 +128,11 @@ export function Navbar() {
   const [language, setLanguage] = React.useState("ID")
   const [cartCount, setCartCount] = React.useState(0)
   const [openMobileDropdown, setOpenMobileDropdown] = React.useState(null)
+  const [isMounted, setIsMounted] = React.useState(false)
+
+  React.useEffect(() => {
+    setIsMounted(true)
+  }, [])
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -172,7 +177,8 @@ export function Navbar() {
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center">
-              <NavigationMenu>
+              {isMounted && (
+                <NavigationMenu>
                 <NavigationMenuList>
                   <NavigationMenuItem>
                     <NavigationMenuTrigger className="text-[15px] font-medium">
@@ -215,19 +221,19 @@ export function Navbar() {
                   </NavigationMenuItem>
 
                   <NavigationMenuItem>
-                    <Link href="/harga" legacyBehavior passHref>
-                      <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-[15px] font-medium")}>
+                    <NavigationMenuLink asChild>
+                      <Link href="/harga" className={cn(navigationMenuTriggerStyle(), "text-[15px] font-medium")}>
                         Harga
-                      </NavigationMenuLink>
-                    </Link>
+                      </Link>
+                    </NavigationMenuLink>
                   </NavigationMenuItem>
 
                   <NavigationMenuItem>
-                    <Link href="/domain" legacyBehavior passHref>
-                      <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-[15px] font-medium")}>
+                    <NavigationMenuLink asChild>
+                      <Link href="/domain" className={cn(navigationMenuTriggerStyle(), "text-[15px] font-medium")}>
                         Domain
-                      </NavigationMenuLink>
-                    </Link>
+                      </Link>
+                    </NavigationMenuLink>
                   </NavigationMenuItem>
 
                   <NavigationMenuItem>
@@ -251,6 +257,7 @@ export function Navbar() {
                   </NavigationMenuItem>
                 </NavigationMenuList>
               </NavigationMenu>
+              )}
             </div>
 
             {/* Right Side Actions */}
@@ -360,7 +367,7 @@ export function Navbar() {
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       <div className="flex items-start gap-3">
-                        <item.icon className="w-5 h-5 mt-0.5 text-[#815854] flex-shrink-0" />
+                        <item.icon className="w-5 h-5 mt-0.5 text-[#815854] shrink-0" />
                         <div>
                           <div className="font-medium text-gray-900">{item.title}</div>
                           <div className="text-xs text-gray-500 mt-0.5">{item.description}</div>
@@ -396,7 +403,7 @@ export function Navbar() {
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       <div className="flex items-start gap-3">
-                        <item.icon className="w-5 h-5 mt-0.5 text-[#815854] flex-shrink-0" />
+                        <item.icon className="w-5 h-5 mt-0.5 text-[#815854] shrink-0" />
                         <div>
                           <div className="font-medium text-gray-900">{item.title}</div>
                           <div className="text-xs text-gray-500 mt-0.5">{item.description}</div>
@@ -449,7 +456,7 @@ export function Navbar() {
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       <div className="flex items-start gap-3">
-                        <item.icon className="w-5 h-5 mt-0.5 text-[#815854] flex-shrink-0" />
+                        <item.icon className="w-5 h-5 mt-0.5 text-[#815854] shrink-0" />
                         <div>
                           <div className="font-medium text-gray-900">{item.title}</div>
                           <div className="text-xs text-gray-500 mt-0.5">{item.description}</div>
@@ -482,7 +489,6 @@ export function Navbar() {
           </div>
         </div>
       </nav>
-
       {/* WhatsApp Floating Button */}
       <a
         href="https://wa.me/6281234567890"
@@ -495,7 +501,6 @@ export function Navbar() {
           Chat dengan Kami
         </span>
       </a>
-
       <style jsx global>{`
         @keyframes slideDown {
           from {
@@ -513,14 +518,15 @@ export function Navbar() {
         }
       `}</style>
     </>
-  )
+  );
 }
 
-const ListItem = React.forwardRef(({ className, title, children, icon: Icon, ...props }, ref) => {
+const ListItem = React.forwardRef(({ className, title, children, icon: Icon, href, ...props }, ref) => {
   return (
     <li>
       <NavigationMenuLink asChild>
-        <a
+        <Link
+          href={href}
           ref={ref}
           className={cn(
             "block select-none space-y-1 rounded-lg p-3 leading-none no-underline outline-none transition-colors hover:bg-[#F9EBDE] hover:text-[#815854] focus:bg-[#F9EBDE] focus:text-[#815854]",
@@ -529,7 +535,7 @@ const ListItem = React.forwardRef(({ className, title, children, icon: Icon, ...
           {...props}
         >
           <div className="flex items-start gap-3">
-            {Icon && <Icon className="w-5 h-5 mt-0.5 text-[#815854] flex-shrink-0" />}
+            {Icon && <Icon className="w-5 h-5 mt-0.5 text-[#815854] shrink-0" />}
             <div className="flex-1">
               <div className="text-sm font-semibold leading-none mb-1.5">{title}</div>
               <p className="line-clamp-2 text-xs leading-snug text-gray-600">
@@ -537,7 +543,7 @@ const ListItem = React.forwardRef(({ className, title, children, icon: Icon, ...
               </p>
             </div>
           </div>
-        </a>
+        </Link>
       </NavigationMenuLink>
     </li>
   )
