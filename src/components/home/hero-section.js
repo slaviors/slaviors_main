@@ -16,7 +16,7 @@ export function HeroSection() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
-                href="https://wa.me/6281234567890"
+                href="https://wa.me/6283160581462"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 text-lg font-semibold text-white bg-[#815854] rounded-lg hover:bg-[#6d4a47] transition-all duration-300 hover:scale-105 hover:shadow-xl"

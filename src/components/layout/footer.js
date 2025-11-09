@@ -56,11 +56,11 @@ export function Footer() {
                 <span>info@slaviors.id</span>
               </a>
               <a
-                href="tel:+6281234567890"
+                href="tel:+6283160581462"
                 className="flex items-center gap-3 text-sm text-gray-800 hover:text-[#815854] transition-colors"
               >
                 <Phone className="w-4 h-4 text-[#815854]" />
-                <span>+62 812-3456-7890</span>
+                <span>+62 831-6058-1462</span>
               </a>
               <div className="flex items-start gap-3 text-sm text-gray-800">
                 <MapPin className="w-4 h-4 text-[#815854] mt-0.5 flex-shrink-0" />
@@ -269,7 +269,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/kontak"
+                  href="/contact"
                   className="text-sm text-gray-700 hover:text-[#815854] transition-colors"
                 >
                   Kontak Kami
@@ -277,7 +277,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://wa.me/6281234567890"
+                  href="https://wa.me/6283160581462"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-gray-700 hover:text-[#815854] transition-colors flex items-center gap-1.5"
