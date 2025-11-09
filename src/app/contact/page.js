@@ -56,69 +56,96 @@ export default function ContactPage() {
       />
 
       {/* Contact Methods Grid */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-3">Pilih Channel Komunikasi</h2>
+            <p className="text-gray-600">Hubungi kami melalui channel yang paling nyaman untuk Anda</p>
+          </div>
+          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* WhatsApp */}
             <a
-              href="https://wa.me/6281234567890"
+              href="https://wa.me/6283160581462"
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-[#25D366] hover:shadow-xl transition-all duration-300"
+              className="group relative bg-white rounded-2xl p-6 hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-[#815854]/30 hover:-translate-y-1"
             >
-              <div className="flex items-center justify-center w-12 h-12 bg-[#25D366] rounded-lg mb-4 group-hover:scale-110 transition-transform">
-                <FaWhatsapp className="w-6 h-6 text-white" />
+              <div className="absolute top-0 right-0 w-32 h-32 bg-[#815854]/5 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500" />
+              <div className="relative">
+                <div className="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-[#815854] to-[#6d4a47] rounded-xl mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
+                  <FaWhatsapp className="w-7 h-7 text-white" />
+                </div>
+                <h3 className="font-bold text-gray-900 mb-2 text-lg">WhatsApp</h3>
+                <p className="text-sm text-gray-600 mb-4">Chat langsung dengan tim kami</p>
+                <div className="flex items-center text-sm font-semibold text-[#815854] group-hover:gap-2 transition-all">
+                  <span>+62 831-6058-1462</span>
+                  <span className="opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                </div>
               </div>
-              <h3 className="font-semibold text-gray-900 mb-2">WhatsApp</h3>
-              <p className="text-sm text-gray-600 mb-3">Chat langsung dengan tim kami</p>
-              <span className="text-sm font-medium text-[#25D366]">+62 812-3456-7890 →</span>
             </a>
 
             {/* Email */}
             <a
               href="mailto:support@slaviors.id"
-              className="group bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-[#815854] hover:shadow-xl transition-all duration-300"
+              className="group relative bg-white rounded-2xl p-6 hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-[#815854]/30 hover:-translate-y-1"
             >
-              <div className="flex items-center justify-center w-12 h-12 bg-[#815854] rounded-lg mb-4 group-hover:scale-110 transition-transform">
-                <Mail className="w-6 h-6 text-white" />
+              <div className="absolute top-0 right-0 w-32 h-32 bg-[#815854]/5 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500" />
+              <div className="relative">
+                <div className="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-[#815854] to-[#6d4a47] rounded-xl mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
+                  <Mail className="w-7 h-7 text-white" />
+                </div>
+                <h3 className="font-bold text-gray-900 mb-2 text-lg">Email</h3>
+                <p className="text-sm text-gray-600 mb-4">Kirim email ke tim support</p>
+                <div className="flex items-center text-sm font-semibold text-[#815854] group-hover:gap-2 transition-all">
+                  <span>support@slaviors.id</span>
+                  <span className="opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                </div>
               </div>
-              <h3 className="font-semibold text-gray-900 mb-2">Email</h3>
-              <p className="text-sm text-gray-600 mb-3">Kirim email ke tim support</p>
-              <span className="text-sm font-medium text-[#815854]">support@slaviors.id →</span>
             </a>
 
             {/* Phone */}
             <a
-              href="tel:+6281234567890"
-              className="group bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-[#815854] hover:shadow-xl transition-all duration-300"
+              href="tel:+6283160581462"
+              className="group relative bg-white rounded-2xl p-6 hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-[#815854]/30 hover:-translate-y-1"
             >
-              <div className="flex items-center justify-center w-12 h-12 bg-[#815854] rounded-lg mb-4 group-hover:scale-110 transition-transform">
-                <Phone className="w-6 h-6 text-white" />
+              <div className="absolute top-0 right-0 w-32 h-32 bg-[#815854]/5 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500" />
+              <div className="relative">
+                <div className="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-[#815854] to-[#6d4a47] rounded-xl mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
+                  <Phone className="w-7 h-7 text-white" />
+                </div>
+                <h3 className="font-bold text-gray-900 mb-2 text-lg">Telepon</h3>
+                <p className="text-sm text-gray-600 mb-4">Hubungi via telepon</p>
+                <div className="flex items-center text-sm font-semibold text-[#815854] group-hover:gap-2 transition-all">
+                  <span>+62 831-6058-1462</span>
+                  <span className="opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                </div>
               </div>
-              <h3 className="font-semibold text-gray-900 mb-2">Telepon</h3>
-              <p className="text-sm text-gray-600 mb-3">Hubungi via telepon</p>
-              <span className="text-sm font-medium text-[#815854]">+62 812-3456-7890 →</span>
             </a>
 
             {/* Ticket Support */}
             <a
               href="/support/ticket"
-              className="group bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-[#815854] hover:shadow-xl transition-all duration-300"
+              className="group relative bg-white rounded-2xl p-6 hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-[#815854]/30 hover:-translate-y-1"
             >
-              <div className="flex items-center justify-center w-12 h-12 bg-[#815854] rounded-lg mb-4 group-hover:scale-110 transition-transform">
-                <Headphones className="w-6 h-6 text-white" />
+              <div className="absolute top-0 right-0 w-32 h-32 bg-[#815854]/5 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500" />
+              <div className="relative">
+                <div className="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-[#815854] to-[#6d4a47] rounded-xl mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
+                  <Headphones className="w-7 h-7 text-white" />
+                </div>
+                <h3 className="font-bold text-gray-900 mb-2 text-lg">Ticket Support</h3>
+                <p className="text-sm text-gray-600 mb-4">Buat tiket support</p>
+                <div className="flex items-center text-sm font-semibold text-[#815854] group-hover:gap-2 transition-all">
+                  <span>Buat Tiket</span>
+                  <span className="opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                </div>
               </div>
-              <h3 className="font-semibold text-gray-900 mb-2">Ticket Support</h3>
-              <p className="text-sm text-gray-600 mb-3">Buat tiket support</p>
-              <span className="text-sm font-medium text-[#815854]">Buat Tiket →</span>
             </a>
           </div>
         </div>
       </section>
 
-      {/* Decorative Grid Pattern Section */}
       <section className="relative py-20 overflow-hidden">
-        {/* Grid Pattern Background */}
         <div className="absolute inset-0">
           {/* Main grid pattern */}
           <div 
@@ -207,7 +234,7 @@ export default function ContactPage() {
                         value={formData.phone}
                         onChange={handleChange}
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#815854] focus:border-transparent transition-colors"
-                        placeholder="+62 812-3456-7890"
+                        placeholder="+62 831-6058-1462"
                       />
                     </div>
 
