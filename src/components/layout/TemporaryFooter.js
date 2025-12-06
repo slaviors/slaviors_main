@@ -79,15 +79,7 @@ export function TemporaryFooter() {
                 <Facebook className="w-4 h-4" />
               </a>
               <a
-                href="https://twitter.com/slaviors"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-9 h-9 flex items-center justify-center bg-white border border-gray-200 rounded-lg hover:bg-[#815854] hover:text-white hover:border-[#815854] transition-all"
-              >
-                <Twitter className="w-4 h-4" />
-              </a>
-              <a
-                href="https://instagram.com/slaviors"
+                href="https://instagram.com/slaviors.id"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 flex items-center justify-center bg-white border border-gray-200 rounded-lg hover:bg-[#815854] hover:text-white hover:border-[#815854] transition-all"
