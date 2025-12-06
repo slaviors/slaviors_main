@@ -1,6 +1,6 @@
 import { Plus_Jakarta_Sans } from "next/font/google"
 import { TemporaryNavbar } from "@/components/layout/TemporaryNavbar"
-import { Footer } from "@/components/layout/footer"
+import { TemporaryFooter } from "@/components/layout/TemporaryFooter"
 import "./globals.css"
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
       >
         <TemporaryNavbar />
         {children}
-        <Footer />
+        <TemporaryFooter />
       </body>
     </html>
   )

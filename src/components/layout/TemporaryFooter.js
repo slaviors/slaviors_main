@@ -12,14 +12,14 @@ import {
   Instagram,
   Linkedin,
   Youtube,
-  Server,
   Code2,
+  Sparkles,
   TrendingUp,
   Shield,
 } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 
-export function Footer() {
+export function TemporaryFooter() {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -33,17 +33,17 @@ export function Footer() {
               <div className="relative w-40 h-14">
                 <Image
                   src="/assets/logos/no-bg/logo-brown.png"
-                  alt="Slaviors Logo"
+                  alt="Slaviors Group Logo"
                   fill
                   className="object-contain"
                 />
               </div>
             </div>
             <p className="text-sm text-gray-800 mb-6 leading-relaxed">
-              Slaviors Group adalah penyedia solusi digital terpercaya dengan
-              teknologi modern. Kami menyediakan hosting, domain, website
-              development, dan software solutions untuk mengembangkan bisnis dan
-              kebutuhan digital Anda.
+              Slaviors Group adalah penyedia solusi teknologi terpercaya dengan
+              layanan Website Development, SaaS Development, dan Custom Software
+              Development. Kami membantu bisnis bertransformasi digital dengan
+              teknologi modern.
             </p>
 
             {/* Contact Info */}
@@ -64,7 +64,7 @@ export function Footer() {
               </a>
               <div className="flex items-start gap-3 text-sm text-gray-800">
                 <MapPin className="w-4 h-4 text-[#815854] mt-0.5 flex-shrink-0" />
-                <span>Jl. Contoh No. 123, Yogyakarta, Indonesia</span>
+                <span>Depok, Sleman, Yogyakarta, Indonesia</span>
               </div>
             </div>
 
@@ -113,82 +113,16 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Produk */}
-          <div>
-            <h3 className="text-gray-900 font-semibold text-base mb-4 flex items-center gap-2">
-              <Server className="w-4 h-4 text-[#815854]" />
-              Produk
-            </h3>
-            <ul className="space-y-3">
-              <li>
-                <Link
-                  href="/produk/shared-hosting"
-                  className="text-sm text-gray-800 hover:text-[#815854] transition-colors"
-                >
-                  Shared Hosting
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/produk/cloud-hosting"
-                  className="text-sm text-gray-800 hover:text-[#815854] transition-colors"
-                >
-                  Cloud Hosting
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/produk/vps"
-                  className="text-sm text-gray-800 hover:text-[#815854] transition-colors"
-                >
-                  VPS Hosting
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/produk/dedicated-server"
-                  className="text-sm text-gray-800 hover:text-[#815854] transition-colors"
-                >
-                  Dedicated Server
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/produk/email-hosting"
-                  className="text-sm text-gray-800 hover:text-[#815854] transition-colors"
-                >
-                  Email Hosting
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/produk/ssl"
-                  className="text-sm text-gray-800 hover:text-[#815854] transition-colors"
-                >
-                  SSL Certificate
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/domain"
-                  className="text-sm text-gray-800 hover:text-[#815854] transition-colors"
-                >
-                  Domain
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Solusi */}
+          {/* Layanan */}
           <div>
             <h3 className="text-gray-900 font-semibold text-base mb-4 flex items-center gap-2">
               <Code2 className="w-4 h-4 text-[#815854]" />
-              Solusi
+              Layanan
             </h3>
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="/solusi/website"
+                  href="/layanan/website-development"
                   className="text-sm text-gray-800 hover:text-[#815854] transition-colors"
                 >
                   Website Development
@@ -196,31 +130,36 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/solusi/software"
+                  href="/layanan/saas-development"
                   className="text-sm text-gray-800 hover:text-[#815854] transition-colors"
                 >
-                  Software Development
+                  SaaS Development
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/solusi/seo"
+                  href="/layanan/custom-software"
                   className="text-sm text-gray-800 hover:text-[#815854] transition-colors"
                 >
-                  SEO & Digital Marketing
+                  Custom Software Development
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/solusi/maintenance"
+                  href="/layanan/website-modernization"
                   className="text-sm text-gray-800 hover:text-[#815854] transition-colors"
                 >
-                  Maintenance & Support
+                  Website Modernization
                 </Link>
               </li>
             </ul>
 
-            <h3 className="text-gray-900 font-semibold text-base mb-4 mt-6 flex items-center gap-2">
+
+          </div>
+
+          {/* Perusahaan */}
+          <div>
+            <h3 className="text-gray-900 font-semibold text-base mb-4 flex items-center gap-2">
               <TrendingUp className="w-4 h-4 text-[#815854]" />
               Perusahaan
             </h3>
@@ -235,18 +174,18 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/blog"
+                  href="/portfolio"
                   className="text-sm text-gray-800 hover:text-[#815854] transition-colors"
                 >
-                  Blog & Tutorial
+                  Portfolio
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/karir"
+                  href="/blog"
                   className="text-sm text-gray-800 hover:text-[#815854] transition-colors"
                 >
-                  Karir
+                  Blog & Tutorial
                 </Link>
               </li>
             </ul>
@@ -261,10 +200,18 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="/support/ticket"
+                  href="/blog"
                   className="text-sm text-gray-700 hover:text-[#815854] transition-colors"
                 >
-                  Ticket Support
+                  Blog & Tutorial
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/faq"
+                  className="text-sm text-gray-700 hover:text-[#815854] transition-colors"
+                >
+                  FAQ
                 </Link>
               </li>
               <li>
@@ -283,53 +230,15 @@ export function Footer() {
                   className="text-sm text-gray-700 hover:text-[#815854] transition-colors flex items-center gap-1.5"
                 >
                   <FaWhatsapp className="w-3.5 h-3.5" />
-                  WhatsApp
+                  WhatsApp Support
                 </a>
-              </li>
-            </ul>
-
-            <h3 className="text-gray-900 font-semibold text-base mb-4 mt-6">
-              Legal
-            </h3>
-            <ul className="space-y-3">
-              <li>
-                <Link
-                  href="/terms"
-                  className="text-sm text-gray-700 hover:text-[#815854] transition-colors"
-                >
-                  Terms of Service
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/privacy"
-                  className="text-sm text-gray-700 hover:text-[#815854] transition-colors"
-                >
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/refund"
-                  className="text-sm text-gray-700 hover:text-[#815854] transition-colors"
-                >
-                  Refund Policy
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/sla"
-                  className="text-sm text-gray-700 hover:text-[#815854] transition-colors"
-                >
-                  SLA Agreement
-                </Link>
               </li>
             </ul>
           </div>
         </div>
       </div>
 
-      {/* Payment Methods (Optional) */}
+      {/* Payment Methods */}
       <div className="border-t border-[#e5d5c8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
@@ -340,15 +249,6 @@ export function Footer() {
               <div className="flex items-center gap-3 flex-wrap">
                 <span className="px-3 py-1.5 bg-white border border-gray-200 rounded text-xs text-gray-800">
                   Bank Transfer
-                </span>
-                <span className="px-3 py-1.5 bg-white border border-gray-200 rounded text-xs text-gray-800">
-                  Virtual Account
-                </span>
-                <span className="px-3 py-1.5 bg-white border border-gray-200 rounded text-xs text-gray-800">
-                  E-Wallet
-                </span>
-                <span className="px-3 py-1.5 bg-white border border-gray-200 rounded text-xs text-gray-800">
-                  Credit Card
                 </span>
               </div>
             </div>
