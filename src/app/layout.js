@@ -1,5 +1,5 @@
 import { Plus_Jakarta_Sans } from "next/font/google"
-import { Navbar } from "@/components/layout/navbar"
+import { TemporaryNavbar } from "@/components/layout/TemporaryNavbar"
 import { Footer } from "@/components/layout/footer"
 import "./globals.css"
 
@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${plusJakartaSans.variable} antialiased font-sans`}
       >
-        <Navbar />
+        <TemporaryNavbar />
         {children}
         <Footer />
       </body>
