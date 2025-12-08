@@ -5,8 +5,8 @@ import Link from "next/link"
 import Image from "next/image"
 import { 
   Menu, X, 
-  Code2, Sparkles, RefreshCw, Wrench,
-  DollarSign, Package, Zap,
+  Code2, Cloud, RefreshCw, Wrench,
+  DollarSign, Package, MonitorCog,
   BookOpen, Headphones, MessageCircle, Phone,
   ChevronDown
 } from "lucide-react"
@@ -34,13 +34,13 @@ const layananItems = [
     title: "SaaS Development",
     href: "/layanan/saas-development",
     description: "Solusi SaaS custom untuk scale up bisnis dan efisiensi operasional.",
-    icon: Sparkles,
+    icon: Cloud,
   },
   {
     title: "Custom Software Development",
     href: "/layanan/custom-software",
     description: "Aplikasi dan sistem informasi management sesuai kebutuhan bisnis.",
-    icon: Zap,
+    icon: MonitorCog,
   },
   {
     title: "Website Modernization",
@@ -61,7 +61,7 @@ const hargaItems = [
     title: "SaaS Development",
     href: "/harga/saas",
     description: "Harga development SaaS sesuai kompleksitas project.",
-    icon: Sparkles,
+    icon: Cloud,
   },
   {
     title: "Custom Software",

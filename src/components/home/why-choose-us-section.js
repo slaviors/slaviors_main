@@ -135,7 +135,7 @@ export function WhyChooseUsSection() {
               <div className="relative w-16 h-16 mb-6">
                 {/* Rotating Background Circle */}
                 <div 
-                  className="absolute inset-0 bg-gradient-to-br from-[#F9EBDE] to-[#f5ddc8] rounded-full group-hover:rotate-180 transition-all duration-700"
+                  className="absolute inset-0 bg-linear-to-br from-[#F9EBDE] to-[#f5ddc8] rounded-full group-hover:rotate-180 transition-all duration-700"
                   style={{
                     transform: hoveredCard === index ? 'translateZ(20px) scale(1.1)' : 'translateZ(0) scale(1)'
                   }}
