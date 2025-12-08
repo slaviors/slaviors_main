@@ -5,7 +5,7 @@ import { MessageCircle, ArrowRight, Cloud, Code2, Rocket } from 'lucide-react';
 
 export function CtaSection() {
   return (
-    <section className="relative py-20 bg-gradient-to-br from-[#815854] to-[#6d4a47] overflow-hidden">
+    <section className="relative py-20 bg-linear-to-br from-[#815854] to-[#6d4a47] overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>

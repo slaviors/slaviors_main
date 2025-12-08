@@ -23,13 +23,13 @@ export function PageHero({
             />
           </div>
           {/* Overlay - gradient dari cream ke transparent */}
-          <div className="absolute inset-0 z-10 bg-gradient-to-br from-[#F9EBDE]/95 via-[#F9EBDE]/90 to-[#F9EBDE]/85" />
+          <div className="absolute inset-0 z-10 bg-linear-to-br from-[#F9EBDE]/95 via-[#F9EBDE]/90 to-[#F9EBDE]/85" />
         </>
       )}
       
       {/* Fallback gradient jika tidak ada image */}
       {!backgroundImage && (
-        <div className="absolute inset-0 z-0 bg-gradient-to-br from-[#F9EBDE] to-white" />
+        <div className="absolute inset-0 z-0 bg-linear-to-br from-[#F9EBDE] to-white" />
       )}
 
       {/* Content */}
@@ -69,7 +69,7 @@ export function PageHero({
       </div>
 
       {/* Decorative Elements */}
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#815854]/20 to-transparent"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-[#815854]/20 to-transparent"></div>
     </section>
   )
 }

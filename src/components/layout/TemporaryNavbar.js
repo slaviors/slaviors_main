@@ -206,7 +206,7 @@ export function TemporaryNavbar() {
 
                   <NavigationMenuItem>
                     <NavigationMenuLink asChild>
-                      <Link href="/tentang" className={cn(navigationMenuTriggerStyle(), "text-[15px] font-medium")}>
+                      <Link href="/about" className={cn(navigationMenuTriggerStyle(), "text-[15px] font-medium")}>
                         Tentang Kami
                       </Link>
                     </NavigationMenuLink>
@@ -350,7 +350,7 @@ export function TemporaryNavbar() {
             </Link>
 
             <Link
-              href="/tentang"
+              href="/about"
               className="block px-4 py-3 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded-lg transition-colors"
               onClick={() => setIsMobileMenuOpen(false)}
             >

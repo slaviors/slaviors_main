@@ -63,7 +63,7 @@ export function Footer() {
                 <span>+62 831-6058-1462</span>
               </a>
               <div className="flex items-start gap-3 text-sm text-gray-800">
-                <MapPin className="w-4 h-4 text-[#815854] mt-0.5 flex-shrink-0" />
+                <MapPin className="w-4 h-4 text-[#815854] mt-0.5 shrink-0" />
                 <span>Jl. Contoh No. 123, Yogyakarta, Indonesia</span>
               </div>
             </div>
@@ -227,7 +227,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="/tentang"
+                  href="/about"
                   className="text-sm text-gray-800 hover:text-[#815854] transition-colors"
                 >
                   Tentang Kami

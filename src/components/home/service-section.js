@@ -88,7 +88,7 @@ export function ServicesSection() {
                     alt={service.title}
                     className="w-full h-80 lg:h-96 object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#815854]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="absolute inset-0 bg-linear-to-br from-[#815854]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   
                   {/* Floating Icon */}
                   <div className="absolute bottom-6 right-6 w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-2xl transform transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
