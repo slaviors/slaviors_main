@@ -169,7 +169,7 @@ export function HeroSection() {
 
             {/* Customer Benefits */}
             <div className="mt-6 flex flex-wrap gap-3 justify-center">
-              {['Siap Pakai', 'Hemat Biaya', 'Support Responsif', 'Maintenance Terjamin'].map((benefit) => (
+              {['Siap Pakai', 'Hemat Biaya', 'Responsif', 'Maintenance Terjamin'].map((benefit) => (
                 <div
                   key={benefit}
                   className="px-4 py-2 bg-white rounded-full border border-gray-200 text-sm font-medium text-gray-700 shadow-sm hover:border-[#815854] hover:text-[#815854] transition-all"
