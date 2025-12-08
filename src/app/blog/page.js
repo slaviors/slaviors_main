@@ -1,13 +1,10 @@
 'use client'
 
-import { TemporaryNavbar } from '@/components/layout/TemporaryNavbar';
-import { TemporaryFooter } from '@/components/layout/TemporaryFooter';
 import { BookOpen, Code2, Clock, PenTool } from 'lucide-react';
 
 export default function BlogPage() {
   return (
     <>
-      <TemporaryNavbar />
       <main className="min-h-screen bg-white">
         {/* Coming Soon Section */}
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">

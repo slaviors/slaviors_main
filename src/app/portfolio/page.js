@@ -1,13 +1,10 @@
 "use client"
 
-import { TemporaryNavbar } from '@/components/layout/TemporaryNavbar';
-import { TemporaryFooter } from '@/components/layout/TemporaryFooter';
 import { Rocket, Code2, Clock } from 'lucide-react';
 
 export default function PortfolioPage() {
   return (
     <>
-      <TemporaryNavbar />
       <main className="min-h-screen bg-white">
         {/* Coming Soon Section */}
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">

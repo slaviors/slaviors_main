@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react';
-import { ArrowRight, Code2, Sparkles, Zap, RefreshCw } from 'lucide-react';
+import { ArrowRight, Code2, Cloud, MonitorCog, RefreshCw } from 'lucide-react';
 
 export function ServicesSection() {
   const services = [
@@ -11,27 +11,27 @@ export function ServicesSection() {
       title: "Website Development",
       description: "Website modern dan landing page yang cepat, responsive, dan SEO-friendly untuk meningkatkan online presence bisnis Anda.",
       features: ["Desain Modern", "Mobile Responsive", "SEO Optimized"],
-      image: "/api/placeholder/600/400",
+      image: "/images/website-development.jpg",
       link: "/layanan/website-development",
       align: "left"
     },
     {
       id: 2,
-      icon: Sparkles,
+      icon: Cloud,
       title: "SaaS Development",
       description: "Solusi SaaS custom yang scalable untuk efisiensi operasional dan pertumbuhan bisnis yang berkelanjutan.",
       features: ["Cloud-Based", "Scalable", "Multi-User"],
-      image: "/api/placeholder/600/400",
+      image: "/images/saas-development.jpg",
       link: "/layanan/saas-development",
       align: "right"
     },
     {
       id: 3,
-      icon: Zap,
+      icon: MonitorCog,
       title: "Custom Software Development",
       description: "Aplikasi dan sistem informasi management yang disesuaikan dengan kebutuhan spesifik bisnis Anda.",
       features: ["Fully Custom", "Automation", "Integration"],
-      image: "/api/placeholder/600/400",
+      image: "/images/custom-software.jpg",
       link: "/layanan/custom-software",
       align: "left"
     },
@@ -41,7 +41,7 @@ export function ServicesSection() {
       title: "Website Modernization",
       description: "Perbarui website lama Anda dengan teknologi terkini untuk performa dan user experience yang lebih baik.",
       features: ["Modern Tech", "Better Performance", "Improved UX"],
-      image: "/api/placeholder/600/400",
+      image: "/images/website-modernization.jpg",
       link: "/layanan/website-modernization",
       align: "right"
     }
