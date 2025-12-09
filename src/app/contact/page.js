@@ -6,6 +6,7 @@ import {
   MessageCircle, Globe, Building
 } from "lucide-react"
 import { FaWhatsapp, FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa"
+import PageHero from "@/components/ui/page-hero"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
