@@ -254,12 +254,6 @@ export default function WebsiteModernizationPage() {
                 alt="Modern Website"
                 className="rounded-2xl shadow-2xl"
               />
-              <FloatingStatsCard
-                icon={Rocket}
-                value="10x"
-                label="Faster"
-                className="absolute -bottom-6 -right-6"
-              />
             </div>
           </div>
         </div>
@@ -298,9 +292,14 @@ export default function WebsiteModernizationPage() {
                     <item.icon className="w-6 h-6 text-red-500" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-lg font-bold text-gray-900 mb-1">
-                      ❌ {item.problem}
-                    </h3>
+                    <div className="flex items-center gap-2 mb-1">
+                      <div className="w-5 h-5 bg-red-500 rounded-full flex items-center justify-center shrink-0">
+                        <span className="text-white text-xs font-bold">✕</span>
+                      </div>
+                      <h3 className="text-lg font-bold text-gray-900">
+                        {item.problem}
+                      </h3>
+                    </div>
                   </div>
                 </div>
 

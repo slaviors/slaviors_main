@@ -1,45 +1,60 @@
-"use client"
+"use client";
 
-import React from 'react';
-import { 
-  Code2, Layout, Smartphone, TrendingUp, 
-  Search, Rocket, CheckCircle2, MessageCircle, 
-  ArrowRight, Clock, Award
-} from 'lucide-react';
-import { FloatingStatsCard, FeatureCard, PackageCard, ProcessStep } from '@/components/services';
+import React from "react";
+import {
+  Code2,
+  Layout,
+  Smartphone,
+  TrendingUp,
+  Search,
+  Rocket,
+  CheckCircle2,
+} from "lucide-react";
+import {
+  FeatureCard,
+  PackageCard,
+  ProcessStep,
+} from "@/components/services";
+import { CtaSection } from "@/components/home/cta-section";
 
 export default function WebsiteDevelopmentPage() {
   const features = [
     {
       icon: Layout,
       title: "Desain Modern & Profesional",
-      description: "UI/UX yang menarik dan intuitif, disesuaikan dengan brand identity bisnis Anda"
+      description:
+        "UI/UX yang menarik dan intuitif, disesuaikan dengan brand identity bisnis Anda",
     },
     {
       icon: Smartphone,
       title: "Mobile Responsive",
-      description: "Tampilan sempurna di semua device, dari desktop hingga smartphone"
+      description:
+        "Tampilan sempurna di semua device, dari desktop hingga smartphone",
     },
     {
       icon: Search,
       title: "SEO Optimized",
-      description: "Website yang mudah ditemukan di Google dengan teknik SEO terbaik"
+      description:
+        "Website yang mudah ditemukan di Google dengan teknik SEO terbaik",
     },
     {
       icon: Rocket,
       title: "Loading Super Cepat",
-      description: "Performa tinggi dengan optimasi kode dan asset untuk kecepatan maksimal"
+      description:
+        "Performa tinggi dengan optimasi kode dan asset untuk kecepatan maksimal",
     },
     {
       icon: Code2,
       title: "Clean Code",
-      description: "Kode yang rapi, terstruktur, dan mudah di-maintain untuk jangka panjang"
+      description:
+        "Kode yang rapi, terstruktur, dan mudah di-maintain untuk jangka panjang",
     },
     {
       icon: TrendingUp,
       title: "Conversion Focused",
-      description: "Dirancang untuk mengubah visitor menjadi customer dengan CTA yang tepat"
-    }
+      description:
+        "Dirancang untuk mengubah visitor menjadi customer dengan CTA yang tepat",
+    },
   ];
 
   const packages = [
@@ -53,9 +68,9 @@ export default function WebsiteDevelopmentPage() {
         "Form kontak/lead",
         "Optimasi SEO dasar",
         "Google Analytics",
-        "Domain & hosting 1 tahun"
+        "Domain & hosting 1 tahun",
       ],
-      popular: false
+      popular: false,
     },
     {
       name: "Company Profile",
@@ -69,14 +84,15 @@ export default function WebsiteDevelopmentPage() {
         "Contact form & map",
         "Blog/news section",
         "Domain & hosting 1 tahun",
-        "Training penggunaan"
+        "Training penggunaan",
       ],
-      popular: true
+      popular: true,
     },
     {
       name: "E-Commerce",
       price: "Mulai dari 10jt",
-      description: "Toko online lengkap dengan sistem pembayaran dan manajemen produk",
+      description:
+        "Toko online lengkap dengan sistem pembayaran dan manajemen produk",
       features: [
         "Katalog produk unlimited",
         "Shopping cart & checkout",
@@ -85,9 +101,9 @@ export default function WebsiteDevelopmentPage() {
         "Order & inventory management",
         "Customer account system",
         "Mobile app friendly",
-        "Training & maintenance"
+        "Training & maintenance",
       ],
-      popular: false
+      popular: false,
     },
     {
       name: "Portal Berita/Blog",
@@ -101,9 +117,9 @@ export default function WebsiteDevelopmentPage() {
         "Newsletter integration",
         "Advertisement slots",
         "Analytics dashboard",
-        "Content scheduling"
+        "Content scheduling",
       ],
-      popular: false
+      popular: false,
     },
     {
       name: "Membership/LMS",
@@ -117,14 +133,15 @@ export default function WebsiteDevelopmentPage() {
         "Quiz & assessment",
         "Certificate generation",
         "Payment subscription",
-        "Discussion forum"
+        "Discussion forum",
       ],
-      popular: false
+      popular: false,
     },
     {
       name: "Custom Website",
       price: "Harga sesuai kebutuhan",
-      description: "Website dengan fitur kompleks sesuai kebutuhan spesifik bisnis",
+      description:
+        "Website dengan fitur kompleks sesuai kebutuhan spesifik bisnis",
       features: [
         "Unlimited halaman",
         "Custom features & functionality",
@@ -133,43 +150,52 @@ export default function WebsiteDevelopmentPage() {
         "Payment gateway",
         "Database design",
         "Full customization",
-        "Maintenance & support"
+        "Maintenance & support",
       ],
-      popular: false
-    }
+      popular: false,
+    },
   ];
 
   const process = [
     {
       step: "01",
       title: "Konsultasi & Analisis",
-      description: "Diskusi mendalam tentang kebutuhan bisnis, target audience, dan goals yang ingin dicapai"
+      description:
+        "Diskusi mendalam tentang kebutuhan bisnis, target audience, dan goals yang ingin dicapai",
     },
     {
       step: "02",
       title: "Design & Prototype",
-      description: "Membuat wireframe dan design mockup untuk approval sebelum development"
+      description:
+        "Membuat wireframe dan design mockup untuk approval sebelum development",
     },
     {
       step: "03",
       title: "Development",
-      description: "Coding website dengan teknologi modern dan best practices"
+      description: "Coding website dengan teknologi modern dan best practices",
     },
     {
       step: "04",
       title: "Testing & Launch",
-      description: "Quality assurance, testing di berbagai device, dan launching ke production"
+      description:
+        "Quality assurance, testing di berbagai device, dan launching ke production",
     },
     {
       step: "05",
       title: "Support & Maintenance",
-      description: "Pendampingan setelah launch dan maintenance berkala"
-    }
+      description: "Pendampingan setelah launch dan maintenance berkala",
+    },
   ];
 
   const techStack = [
-    "Next.js", "React", "TypeScript", "Tailwind CSS", 
-    "Node.js", "PostgreSQL", "Vercel", "Firebase"
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Node.js",
+    "PostgreSQL",
+    "Vercel",
+    "Firebase",
   ];
 
   return (
@@ -195,7 +221,8 @@ export default function WebsiteDevelopmentPage() {
             Website Development
           </h1>
           <p className="text-lg sm:text-xl text-white/90 drop-shadow-md max-w-2xl mx-auto">
-            Bangun online presence yang kuat dengan website modern, cepat, dan conversion-focused
+            Bangun online presence yang kuat dengan website modern, cepat, dan
+            conversion-focused
           </p>
         </div>
       </section>
@@ -210,28 +237,41 @@ export default function WebsiteDevelopmentPage() {
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Di era digital ini, website bukan hanya soal tampilan. Kami membangun website yang tidak hanya eye-catching, tapi juga <strong>fast, SEO-friendly, dan conversion-focused</strong>.
+                  Di era digital ini, website bukan hanya soal tampilan. Kami
+                  membangun website yang tidak hanya eye-catching, tapi juga{" "}
+                  <strong>fast, SEO-friendly, dan conversion-focused</strong>.
                 </p>
                 <p>
-                  Dari landing page yang simpel hingga company profile yang kompleks, kami pastikan setiap elemen dirancang untuk mencapai goals bisnis Anda. Website yang kami bangun menggunakan teknologi terkini untuk performa maksimal.
+                  Dari landing page yang simpel hingga company profile yang
+                  kompleks, kami pastikan setiap elemen dirancang untuk mencapai
+                  goals bisnis Anda. Website yang kami bangun menggunakan
+                  teknologi terkini untuk performa maksimal.
                 </p>
                 <p>
-                  Yang paling penting? Anda tidak perlu pusing dengan teknis. Kami handle semuanya - dari design, development, hingga hosting dan maintenance.
+                  Yang paling penting? Anda tidak perlu pusing dengan teknis.
+                  Kami handle semuanya - dari design, development, hingga
+                  hosting dan maintenance.
                 </p>
               </div>
 
               <div className="mt-8 flex flex-wrap gap-4">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-5 h-5 text-[#815854]" />
-                  <span className="text-sm font-medium text-gray-700">Responsive Design</span>
+                  <span className="text-sm font-medium text-gray-700">
+                    Responsive Design
+                  </span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-5 h-5 text-[#815854]" />
-                  <span className="text-sm font-medium text-gray-700">SEO Optimized</span>
+                  <span className="text-sm font-medium text-gray-700">
+                    SEO Optimized
+                  </span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-5 h-5 text-[#815854]" />
-                  <span className="text-sm font-medium text-gray-700">Fast Performance</span>
+                  <span className="text-sm font-medium text-gray-700">
+                    Fast Performance
+                  </span>
                 </div>
               </div>
             </div>
@@ -242,12 +282,6 @@ export default function WebsiteDevelopmentPage() {
                 alt="Web Development Process"
                 className="rounded-2xl shadow-2xl"
               />
-              <FloatingStatsCard
-                icon={Award}
-                value="A+"
-                label="SEO Score"
-                className="absolute -bottom-6 -right-6"
-              />
             </div>
           </div>
         </div>
@@ -256,13 +290,16 @@ export default function WebsiteDevelopmentPage() {
       {/* Features Grid */}
       <section className="py-20 bg-gray-50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.03]">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `
               linear-gradient(#815854 1px, transparent 1px),
               linear-gradient(90deg, #815854 1px, transparent 1px)
             `,
-            backgroundSize: '50px 50px'
-          }}></div>
+              backgroundSize: "50px 50px",
+            }}
+          ></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -271,7 +308,8 @@ export default function WebsiteDevelopmentPage() {
               Fitur & Keunggulan
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Setiap website yang kami bangun dilengkapi dengan fitur-fitur essential ini
+              Setiap website yang kami bangun dilengkapi dengan fitur-fitur
+              essential ini
             </p>
           </div>
 
@@ -354,7 +392,9 @@ export default function WebsiteDevelopmentPage() {
             <h3 className="text-2xl font-bold text-gray-900 mb-2">
               Teknologi yang Kami Gunakan
             </h3>
-            <p className="text-gray-600">Modern tech stack untuk performa maksimal</p>
+            <p className="text-gray-600">
+              Modern tech stack untuk performa maksimal
+            </p>
           </div>
           <div className="flex flex-wrap justify-center gap-4">
             {techStack.map((tech, index) => (
@@ -368,41 +408,7 @@ export default function WebsiteDevelopmentPage() {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-linear-to-br from-[#815854] to-[#6d4a47] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
-          <div className="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-        </div>
-
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-            Siap Membangun Website Impian Anda?
-          </h2>
-          <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-            Konsultasikan project Anda dengan tim kami. Gratis, tanpa komitmen!
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://wa.me/6283160581462"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#815854] font-semibold rounded-full hover:bg-gray-50 transition-all duration-300 hover:scale-105 shadow-xl"
-            >
-              <MessageCircle className="w-5 h-5" />
-              Konsultasi Gratis
-            </a>
-            <a
-              href="/portfolio"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent text-white font-semibold rounded-full border-2 border-white hover:bg-white hover:text-[#815854] transition-all duration-300"
-            >
-              Lihat Portfolio
-              <ArrowRight className="w-5 h-5" />
-            </a>
-          </div>
-        </div>
-      </section>
+      <CtaSection />
     </div>
   );
 }

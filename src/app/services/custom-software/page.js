@@ -7,6 +7,7 @@ import {
   ArrowRight, Award, Puzzle, Monitor
 } from 'lucide-react';
 import { FloatingStatsCard, FeatureCard, PackageCard, ProcessStep } from '@/components/services';
+import { CtaSection } from '@/components/home/cta-section';
 
 export default function CustomSoftwarePage() {
   const features = [
@@ -247,12 +248,6 @@ export default function CustomSoftwarePage() {
                 alt="Custom Software"
                 className="rounded-2xl shadow-2xl"
               />
-              <FloatingStatsCard
-                icon={Code2}
-                value="100%"
-                label="Custom"
-                className="absolute -bottom-6 -right-6"
-              />
             </div>
           </div>
         </div>
@@ -441,41 +436,7 @@ export default function CustomSoftwarePage() {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-linear-to-br from-[#815854] to-[#6d4a47] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
-          <div className="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-        </div>
-
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-            Punya Challenge Bisnis yang Butuh Solusi Custom?
-          </h2>
-          <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-            Mari diskusikan pain points bisnis Anda dan bagaimana software custom bisa jadi solusinya
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://wa.me/6283160581462"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#815854] font-semibold rounded-full hover:bg-gray-50 transition-all duration-300 hover:scale-105 shadow-xl"
-            >
-              <MessageCircle className="w-5 h-5" />
-              Konsultasi Gratis
-            </a>
-            <a
-              href="/portfolio"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent text-white font-semibold rounded-full border-2 border-white hover:bg-white hover:text-[#815854] transition-all duration-300"
-            >
-              Lihat Portfolio
-              <ArrowRight className="w-5 h-5" />
-            </a>
-          </div>
-        </div>
-      </section>
+      <CtaSection />
     </div>
   );
 }

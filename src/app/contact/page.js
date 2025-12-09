@@ -5,8 +5,8 @@ import {
   Mail, Phone, MapPin, Send, 
   MessageCircle, Globe, Building
 } from "lucide-react"
-import { FaWhatsapp, FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa"
-import PageHero from "@/components/ui/page-hero"
+import { FaWhatsapp, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa"
+import { PageHero } from "@/components/ui/page-hero"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -52,7 +52,7 @@ export default function ContactPage() {
       />
 
       {/* Contact Methods Grid */}
-      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
+      <section className="py-16 bg-linear-to-brom-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-3">Pilih Channel Komunikasi</h2>
@@ -69,7 +69,7 @@ export default function ContactPage() {
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#815854]/5 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500" />
               <div className="relative">
-                <div className="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-[#815854] to-[#6d4a47] rounded-xl mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
+                <div className="flex items-center justify-center w-14 h-14 bg-linear-to-br from-[#815854] to-[#6d4a47] rounded-xl mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
                   <FaWhatsapp className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="font-bold text-gray-900 mb-2 text-lg">WhatsApp</h3>
@@ -88,7 +88,7 @@ export default function ContactPage() {
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#815854]/5 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500" />
               <div className="relative">
-                <div className="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-[#815854] to-[#6d4a47] rounded-xl mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
+                <div className="flex items-center justify-center w-14 h-14 bg-linear-to-br from-[#815854] to-[#6d4a47] rounded-xl mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
                   <Mail className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="font-bold text-gray-900 mb-2 text-lg">Email</h3>
@@ -107,7 +107,7 @@ export default function ContactPage() {
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#815854]/5 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500" />
               <div className="relative">
-                <div className="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-[#815854] to-[#6d4a47] rounded-xl mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
+                <div className="flex items-center justify-center w-14 h-14 bg-linear-to-br from-[#815854] to-[#6d4a47] rounded-xl mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
                   <Phone className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="font-bold text-gray-900 mb-2 text-lg">Telepon</h3>
@@ -137,7 +137,7 @@ export default function ContactPage() {
           />
           
           {/* Fade effect on edges */}
-          <div className="absolute inset-0 bg-gradient-to-r from-white via-transparent to-white opacity-60" />
+          <div className="absolute inset-0 bg-linear-to-r from-white via-transparent to-white opacity-60" />
         </div>
 
         <div className="relative z-10">          
