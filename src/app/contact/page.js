@@ -1,19 +1,16 @@
 "use client"
 
 import { useState } from "react"
-import { PageHero } from "@/components/ui/page-hero"
 import { 
-  Mail, Phone, MapPin, Clock, Send, 
-  MessageCircle, Headphones, Globe, Building
+  Mail, Phone, MapPin, Send, 
+  MessageCircle, Globe, Building
 } from "lucide-react"
-import { FaWhatsapp, FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa"
+import { FaWhatsapp, FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
-    subject: "",
     message: ""
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -37,8 +34,6 @@ export default function ContactPage() {
       setFormData({
         name: "",
         email: "",
-        phone: "",
-        subject: "",
         message: ""
       })
       
@@ -49,21 +44,36 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <PageHero
-        title="Hubungi Kami"
-        description="Tim kami siap membantu Anda 24/7. Hubungi kami melalui berbagai channel yang tersedia atau isi form di bawah ini."
-        backgroundImage="https://images.pexels.com/photos/8867275/pexels-photo-8867275.jpeg"
-      />
+      <div className="relative bg-gradient-to-br from-[#815854] to-[#6d4a47] text-white py-20">
+        <div className="absolute inset-0 opacity-10">
+          <div 
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `
+                linear-gradient(to right, white 1px, transparent 1px),
+                linear-gradient(to bottom, white 1px, transparent 1px)
+              `,
+              backgroundSize: '40px 40px'
+            }}
+          />
+        </div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Hubungi Kami</h1>
+          <p className="text-lg text-white/90 max-w-2xl mx-auto">
+            Tim kami siap membantu Anda. Hubungi kami melalui berbagai channel yang tersedia.
+          </p>
+        </div>
+      </div>
 
       {/* Contact Methods Grid */}
-      <section className="py-16 bg-linear-to-b from-gray-50 to-white">
+      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-3">Pilih Channel Komunikasi</h2>
             <p className="text-gray-600">Hubungi kami melalui channel yang paling nyaman untuk Anda</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* WhatsApp */}
             <a
               href="https://wa.me/6283160581462"
@@ -73,7 +83,7 @@ export default function ContactPage() {
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#815854]/5 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500" />
               <div className="relative">
-                <div className="flex items-center justify-center w-14 h-14 bg-linear-to-br from-[#815854] to-[#6d4a47] rounded-xl mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
+                <div className="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-[#815854] to-[#6d4a47] rounded-xl mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
                   <FaWhatsapp className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="font-bold text-gray-900 mb-2 text-lg">WhatsApp</h3>
@@ -87,18 +97,18 @@ export default function ContactPage() {
 
             {/* Email */}
             <a
-              href="mailto:support@slaviors.id"
+              href="mailto:contact@slaviors.id"
               className="group relative bg-white rounded-2xl p-6 hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-[#815854]/30 hover:-translate-y-1"
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#815854]/5 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500" />
               <div className="relative">
-                <div className="flex items-center justify-center w-14 h-14 bg-linear-to-br from-[#815854] to-[#6d4a47] rounded-xl mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
+                <div className="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-[#815854] to-[#6d4a47] rounded-xl mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
                   <Mail className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="font-bold text-gray-900 mb-2 text-lg">Email</h3>
-                <p className="text-sm text-gray-600 mb-4">Kirim email ke tim support</p>
+                <p className="text-sm text-gray-600 mb-4">Kirim email ke tim kami</p>
                 <div className="flex items-center text-sm font-semibold text-[#815854] group-hover:gap-2 transition-all">
-                  <span>support@slaviors.id</span>
+                  <span>contact@slaviors.id</span>
                   <span className="opacity-0 group-hover:opacity-100 transition-opacity">→</span>
                 </div>
               </div>
@@ -111,32 +121,13 @@ export default function ContactPage() {
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#815854]/5 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500" />
               <div className="relative">
-                <div className="flex items-center justify-center w-14 h-14 bg-linear-to-br from-[#815854] to-[#6d4a47] rounded-xl mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
+                <div className="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-[#815854] to-[#6d4a47] rounded-xl mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
                   <Phone className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="font-bold text-gray-900 mb-2 text-lg">Telepon</h3>
                 <p className="text-sm text-gray-600 mb-4">Hubungi via telepon</p>
                 <div className="flex items-center text-sm font-semibold text-[#815854] group-hover:gap-2 transition-all">
                   <span>+62 831-6058-1462</span>
-                  <span className="opacity-0 group-hover:opacity-100 transition-opacity">→</span>
-                </div>
-              </div>
-            </a>
-
-            {/* Ticket Support */}
-            <a
-              href="/support/ticket"
-              className="group relative bg-white rounded-2xl p-6 hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-[#815854]/30 hover:-translate-y-1"
-            >
-              <div className="absolute top-0 right-0 w-32 h-32 bg-[#815854]/5 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500" />
-              <div className="relative">
-                <div className="flex items-center justify-center w-14 h-14 bg-linear-to-br from-[#815854] to-[#6d4a47] rounded-xl mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
-                  <Headphones className="w-7 h-7 text-white" />
-                </div>
-                <h3 className="font-bold text-gray-900 mb-2 text-lg">Ticket Support</h3>
-                <p className="text-sm text-gray-600 mb-4">Buat tiket support</p>
-                <div className="flex items-center text-sm font-semibold text-[#815854] group-hover:gap-2 transition-all">
-                  <span>Buat Tiket</span>
                   <span className="opacity-0 group-hover:opacity-100 transition-opacity">→</span>
                 </div>
               </div>
@@ -160,7 +151,7 @@ export default function ContactPage() {
           />
           
           {/* Fade effect on edges */}
-          <div className="absolute inset-0 bg-linear-to-r from-white via-transparent to-white opacity-60" />
+          <div className="absolute inset-0 bg-gradient-to-r from-white via-transparent to-white opacity-60" />
         </div>
 
         <div className="relative z-10">          
@@ -172,7 +163,7 @@ export default function ContactPage() {
               <div className="bg-white rounded-xl shadow-lg p-6 sm:p-8">
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">Kirim Pesan</h2>
                 <p className="text-gray-600 mb-6">
-                  Isi form di bawah ini dan tim kami akan merespons dalam 24 jam.
+                  Isi form di bawah ini dan tim kami akan merespons segera.
                 </p>
 
                 {submitStatus === "success" && (
@@ -188,76 +179,36 @@ export default function ContactPage() {
                 )}
 
                 <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-gray-900 mb-2">
-                        Nama Lengkap *
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        required
-                        value={formData.name}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#815854] focus:border-transparent transition-colors"
-                        placeholder="John Doe"
-                      />
-                    </div>
-
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-900 mb-2">
-                        Email *
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        required
-                        value={formData.email}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#815854] focus:border-transparent transition-colors"
-                        placeholder="john@example.com"
-                      />
-                    </div>
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium text-gray-900 mb-2">
+                      Nama Lengkap *
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      value={formData.name}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#815854] focus:border-transparent transition-colors"
+                      placeholder="John Doe"
+                    />
                   </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div>
-                      <label htmlFor="phone" className="block text-sm font-medium text-gray-900 mb-2">
-                        Nomor Telepon
-                      </label>
-                      <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#815854] focus:border-transparent transition-colors"
-                        placeholder="+62 831-6058-1462"
-                      />
-                    </div>
-
-                    <div>
-                      <label htmlFor="subject" className="block text-sm font-medium text-gray-900 mb-2">
-                        Subjek *
-                      </label>
-                      <select
-                        id="subject"
-                        name="subject"
-                        required
-                        value={formData.subject}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#815854] focus:border-transparent transition-colors"
-                      >
-                        <option value="">Pilih Subjek</option>
-                        <option value="sales">Sales Inquiry</option>
-                        <option value="support">Technical Support</option>
-                        <option value="billing">Billing & Payment</option>
-                        <option value="general">General Question</option>
-                        <option value="partnership">Partnership</option>
-                      </select>
-                    </div>
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-900 mb-2">
+                      Email *
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      value={formData.email}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#815854] focus:border-transparent transition-colors"
+                      placeholder="john@example.com"
+                    />
                   </div>
 
                   <div>
@@ -303,32 +254,27 @@ export default function ContactPage() {
               <div className="bg-white rounded-xl shadow-lg p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <Building className="w-6 h-6 text-[#815854]" />
-                  <h3 className="text-lg font-bold text-gray-900">Kantor Kami</h3>
+                  <h3 className="text-lg font-bold text-gray-900">Informasi Kontak</h3>
                 </div>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <MapPin className="w-5 h-5 text-[#815854] mt-0.5 shrink-0" />
                     <div>
-                      <p className="text-sm font-medium text-gray-900">Alamat</p>
+                      <p className="text-sm font-medium text-gray-900">Lokasi</p>
                       <p className="text-sm text-gray-600 mt-1">
-                        Jl. Contoh No. 123<br />
-                        Yogyakarta 55281<br />
-                        Indonesia
+                        Depok, Sleman<br />
+                        Yogyakarta, Indonesia
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <Clock className="w-5 h-5 text-[#815854] mt-0.5 shrink-0" />
+                    <MessageCircle className="w-5 h-5 text-[#815854] mt-0.5 shrink-0" />
                     <div>
-                      <p className="text-sm font-medium text-gray-900">Jam Operasional</p>
+                      <p className="text-sm font-medium text-gray-900">Layanan</p>
                       <p className="text-sm text-gray-600 mt-1">
-                        Senin - Jumat: 09:00 - 18:00<br />
-                        Sabtu: 09:00 - 15:00<br />
-                        Minggu: Tutup
-                      </p>
-                      <p className="text-xs text-[#815854] font-medium mt-2">
-                        * Support 24/7 via WhatsApp & Email
+                        Online Support 24/7<br />
+                        Via WhatsApp & Email
                       </p>
                     </div>
                   </div>
@@ -354,22 +300,16 @@ export default function ContactPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center w-10 h-10 bg-gray-100 hover:bg-blue-600 text-gray-700 hover:text-white rounded-lg transition-all duration-300"
+                    title="Facebook"
                   >
                     <FaFacebook className="w-5 h-5" />
                   </a>
                   <a
-                    href="https://twitter.com/slaviors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center w-10 h-10 bg-gray-100 hover:bg-blue-400 text-gray-700 hover:text-white rounded-lg transition-all duration-300"
-                  >
-                    <FaTwitter className="w-5 h-5" />
-                  </a>
-                  <a
-                    href="https://instagram.com/slaviors"
+                    href="https://instagram.com/slaviors.id"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center w-10 h-10 bg-gray-100 hover:bg-pink-600 text-gray-700 hover:text-white rounded-lg transition-all duration-300"
+                    title="Instagram"
                   >
                     <FaInstagram className="w-5 h-5" />
                   </a>
@@ -378,8 +318,18 @@ export default function ContactPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center w-10 h-10 bg-gray-100 hover:bg-blue-700 text-gray-700 hover:text-white rounded-lg transition-all duration-300"
+                    title="LinkedIn"
                   >
                     <FaLinkedin className="w-5 h-5" />
+                  </a>
+                  <a
+                    href="https://youtube.com/@slaviors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center w-10 h-10 bg-gray-100 hover:bg-red-600 text-gray-700 hover:text-white rounded-lg transition-all duration-300"
+                    title="YouTube"
+                  >
+                    <FaYoutube className="w-5 h-5" />
                   </a>
                 </div>
               </div>
