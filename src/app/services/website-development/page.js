@@ -6,6 +6,7 @@ import {
   Search, Rocket, CheckCircle2, MessageCircle, 
   ArrowRight, Clock, Award
 } from 'lucide-react';
+import { FloatingStatsCard, FeatureCard, PackageCard, ProcessStep } from '@/components/services';
 
 export default function WebsiteDevelopmentPage() {
   const features = [
@@ -241,15 +242,12 @@ export default function WebsiteDevelopmentPage() {
                 alt="Web Development Process"
                 className="rounded-2xl shadow-2xl"
               />
-              <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-6 border border-gray-100">
-                <div className="flex items-center gap-3">
-                  <Award className="w-10 h-10 text-[#815854]" />
-                  <div>
-                    <div className="text-2xl font-bold text-[#815854]">A+</div>
-                    <div className="text-xs text-gray-600">SEO Score</div>
-                  </div>
-                </div>
-              </div>
+              <FloatingStatsCard
+                icon={Award}
+                value="A+"
+                label="SEO Score"
+                className="absolute -bottom-6 -right-6"
+              />
             </div>
           </div>
         </div>
@@ -279,20 +277,12 @@ export default function WebsiteDevelopmentPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <div
+              <FeatureCard
                 key={index}
-                className="group bg-white p-6 rounded-2xl border border-gray-200 hover:border-[#815854] transition-all duration-300 hover:shadow-xl"
-              >
-                <div className="w-12 h-12 bg-[#F9EBDE] rounded-xl flex items-center justify-center mb-4 group-hover:bg-[#815854] group-hover:scale-110 transition-all duration-300">
-                  <feature.icon className="w-6 h-6 text-[#815854] group-hover:text-white transition-colors duration-300" />
-                </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
-                  {feature.title}
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  {feature.description}
-                </p>
-              </div>
+                icon={feature.icon}
+                title={feature.title}
+                description={feature.description}
+              />
             ))}
           </div>
         </div>
@@ -312,56 +302,14 @@ export default function WebsiteDevelopmentPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {packages.map((pkg, index) => (
-              <div
+              <PackageCard
                 key={index}
-                className={`relative bg-white rounded-2xl border-2 p-8 transition-all duration-300 hover:shadow-2xl ${
-                  pkg.popular
-                    ? 'border-[#815854] shadow-xl scale-105'
-                    : 'border-gray-200 hover:border-[#815854]'
-                }`}
-              >
-                {pkg.popular && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                    <span className="bg-[#815854] text-white text-xs font-bold px-4 py-2 rounded-full">
-                      PALING POPULER
-                    </span>
-                  </div>
-                )}
-
-                <div className="text-center mb-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                    {pkg.name}
-                  </h3>
-                  <div className="text-3xl font-bold text-[#815854] mb-2">
-                    {pkg.price}
-                  </div>
-                  <p className="text-sm text-gray-600">
-                    {pkg.description}
-                  </p>
-                </div>
-
-                <ul className="space-y-3 mb-8">
-                  {pkg.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-[#815854] shrink-0 mt-0.5" />
-                      <span className="text-sm text-gray-700">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <a
-                  href="https://wa.me/6283160581462"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`block w-full py-3 text-center font-semibold rounded-full transition-all duration-300 ${
-                    pkg.popular
-                      ? 'bg-[#815854] text-white hover:bg-[#6d4a47]'
-                      : 'bg-white text-[#815854] border-2 border-[#815854] hover:bg-[#815854] hover:text-white'
-                  }`}
-                >
-                  Pilih Paket Ini
-                </a>
-              </div>
+                name={pkg.name}
+                price={pkg.price}
+                description={pkg.description}
+                features={pkg.features}
+                popular={pkg.popular}
+              />
             ))}
           </div>
         </div>
@@ -387,17 +335,12 @@ export default function WebsiteDevelopmentPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
               {process.map((item, index) => (
-                <div key={index} className="relative flex flex-col items-center text-center">
-                  <div className="relative z-10 w-24 h-24 bg-[#815854] rounded-full flex items-center justify-center mb-4 shadow-lg">
-                    <span className="text-white text-2xl font-bold">{item.step}</span>
-                  </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-gray-600">
-                    {item.description}
-                  </p>
-                </div>
+                <ProcessStep
+                  key={index}
+                  step={item.step}
+                  title={item.title}
+                  description={item.description}
+                />
               ))}
             </div>
           </div>

@@ -6,6 +6,7 @@ import {
   ArrowRight, CheckCircle2, MessageCircle,
   Rocket, TrendingUp, Users
 } from 'lucide-react';
+import { FeatureCard, ProcessStep } from '@/components/services';
 
 export default function ServicesPage() {
   const services = [
@@ -131,7 +132,7 @@ export default function ServicesPage() {
             alt="Slaviors Services"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/80"></div>
+          <div className="absolute inset-0 bg-linear-to-r from-black/80 via-black/60 to-black/80"></div>
         </div>
 
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
@@ -173,7 +174,7 @@ export default function ServicesPage() {
                 className="group bg-white rounded-2xl border-2 border-gray-200 hover:border-[#815854] transition-all duration-300 hover:shadow-2xl overflow-hidden"
               >
                 {/* Header with Gradient */}
-                <div className={`bg-gradient-to-r ${service.color} p-6`}>
+                <div className={`bg-linear-to-r ${service.color} p-6`}>
                   <div className="flex items-start justify-between">
                     <div className="flex items-center gap-4">
                       <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center shadow-lg">
@@ -201,7 +202,7 @@ export default function ServicesPage() {
                   <ul className="space-y-3 mb-6">
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start gap-3">
-                        <CheckCircle2 className="w-5 h-5 text-[#815854] flex-shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-5 h-5 text-[#815854] shrink-0 mt-0.5" />
                         <span className="text-sm text-gray-700">{feature}</span>
                       </li>
                     ))}
@@ -244,19 +245,12 @@ export default function ServicesPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {whyChoose.map((item, index) => (
-              <div
-                key={index}
-                className="group bg-white p-8 rounded-2xl border border-gray-200 hover:border-[#815854] transition-all duration-300 hover:shadow-xl text-center"
-              >
-                <div className="w-16 h-16 bg-[#F9EBDE] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#815854] group-hover:scale-110 transition-all duration-300">
-                  <item.icon className="w-8 h-8 text-[#815854] group-hover:text-white transition-colors duration-300" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  {item.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {item.description}
-                </p>
+              <div key={index} className="text-center">
+                <FeatureCard
+                  icon={item.icon}
+                  title={item.title}
+                  description={item.description}
+                />
               </div>
             ))}
           </div>
@@ -284,17 +278,13 @@ export default function ServicesPage() {
             {/* Process Steps */}
             <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
               {process.map((item, index) => (
-                <div key={index} className="relative flex flex-col items-center text-center">
-                  <div className="relative z-10 w-24 h-24 bg-[#815854] rounded-full flex items-center justify-center mb-4 shadow-lg">
-                    <span className="text-white text-2xl font-bold">{item.step}</span>
-                  </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-gray-600">
-                    {item.description}
-                  </p>
-                </div>
+                <ProcessStep
+                  key={index}
+                  step={item.step}
+                  title={item.title}
+                  description={item.description}
+                  isLast={index === process.length - 1}
+                />
               ))}
             </div>
           </div>
@@ -326,7 +316,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-[#815854] to-[#6d4a47] relative overflow-hidden">
+      <section className="py-20 bg-linear-to-br from-[#815854] to-[#6d4a47] relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
           <div className="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>

@@ -6,6 +6,7 @@ import {
   Database, RefreshCw, CheckCircle2, MessageCircle, 
   ArrowRight, Award, Layers, Settings
 } from 'lucide-react';
+import { FloatingStatsCard, FeatureCard, PackageCard, ProcessStep } from '@/components/services';
 
 export default function SaaSDevelopmentPage() {
   const features = [
@@ -167,7 +168,7 @@ export default function SaaSDevelopmentPage() {
             alt="SaaS Development"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/80"></div>
+          <div className="absolute inset-0 bg-linear-to-r from-black/80 via-black/60 to-black/80"></div>
         </div>
 
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
@@ -227,15 +228,12 @@ export default function SaaSDevelopmentPage() {
                 alt="SaaS Platform"
                 className="rounded-2xl shadow-2xl"
               />
-              <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-6 border border-gray-100">
-                <div className="flex items-center gap-3">
-                  <Cloud className="w-10 h-10 text-[#815854]" />
-                  <div>
-                    <div className="text-2xl font-bold text-[#815854]">99.9%</div>
-                    <div className="text-xs text-gray-600">Uptime</div>
-                  </div>
-                </div>
-              </div>
+              <FloatingStatsCard
+                icon={Cloud}
+                value="99.9%"
+                label="Uptime"
+                className="absolute -bottom-6 -right-6"
+              />
             </div>
           </div>
         </div>
@@ -303,7 +301,7 @@ export default function SaaSDevelopmentPage() {
                 className="group bg-gray-50 p-8 rounded-2xl border border-gray-200 hover:border-[#815854] transition-all duration-300 hover:shadow-xl"
               >
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-[#815854] transition-colors duration-300">
+                  <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shrink-0 group-hover:bg-[#815854] transition-colors duration-300">
                     <useCase.icon className="w-6 h-6 text-[#815854] group-hover:text-white transition-colors duration-300" />
                   </div>
                   <div>
@@ -379,7 +377,7 @@ export default function SaaSDevelopmentPage() {
                 <ul className="space-y-3 mb-8">
                   {model.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-[#815854] flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-5 h-5 text-[#815854] shrink-0 mt-0.5" />
                       <span className="text-sm text-gray-700">{feature}</span>
                     </li>
                   ))}
@@ -462,7 +460,7 @@ export default function SaaSDevelopmentPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-[#815854] to-[#6d4a47] relative overflow-hidden">
+      <section className="py-20 bg-linear-to-br from-[#815854] to-[#6d4a47] relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
           <div className="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>

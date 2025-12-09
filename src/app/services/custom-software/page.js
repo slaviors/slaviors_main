@@ -6,6 +6,7 @@ import {
   LineChart, FileText, CheckCircle2, MessageCircle, 
   ArrowRight, Award, Puzzle, Monitor
 } from 'lucide-react';
+import { FloatingStatsCard, FeatureCard, PackageCard, ProcessStep } from '@/components/services';
 
 export default function CustomSoftwarePage() {
   const features = [
@@ -186,7 +187,7 @@ export default function CustomSoftwarePage() {
             alt="Custom Software Development"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/80"></div>
+          <div className="absolute inset-0 bg-linear-to-r from-black/80 via-black/60 to-black/80"></div>
         </div>
 
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
@@ -246,15 +247,12 @@ export default function CustomSoftwarePage() {
                 alt="Custom Software"
                 className="rounded-2xl shadow-2xl"
               />
-              <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-6 border border-gray-100">
-                <div className="flex items-center gap-3">
-                  <Code2 className="w-10 h-10 text-[#815854]" />
-                  <div>
-                    <div className="text-2xl font-bold text-[#815854]">100%</div>
-                    <div className="text-xs text-gray-600">Custom</div>
-                  </div>
-                </div>
-              </div>
+              <FloatingStatsCard
+                icon={Code2}
+                value="100%"
+                label="Custom"
+                className="absolute -bottom-6 -right-6"
+              />
             </div>
           </div>
         </div>
@@ -305,20 +303,12 @@ export default function CustomSoftwarePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <div
+              <FeatureCard
                 key={index}
-                className="group bg-white p-6 rounded-2xl border border-gray-200 hover:border-[#815854] transition-all duration-300 hover:shadow-xl"
-              >
-                <div className="w-12 h-12 bg-[#F9EBDE] rounded-xl flex items-center justify-center mb-4 group-hover:bg-[#815854] group-hover:scale-110 transition-all duration-300">
-                  <feature.icon className="w-6 h-6 text-[#815854] group-hover:text-white transition-colors duration-300" />
-                </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
-                  {feature.title}
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  {feature.description}
-                </p>
-              </div>
+                icon={feature.icon}
+                title={feature.title}
+                description={feature.description}
+              />
             ))}
           </div>
         </div>
@@ -343,7 +333,7 @@ export default function CustomSoftwarePage() {
                 className="group bg-white p-8 rounded-2xl border border-gray-200 hover:border-[#815854] transition-all duration-300 hover:shadow-xl"
               >
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="w-12 h-12 bg-[#F9EBDE] rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-[#815854] transition-colors duration-300">
+                  <div className="w-12 h-12 bg-[#F9EBDE] rounded-xl flex items-center justify-center shrink-0 group-hover:bg-[#815854] transition-colors duration-300">
                     <useCase.icon className="w-6 h-6 text-[#815854] group-hover:text-white transition-colors duration-300" />
                   </div>
                   <div>
@@ -385,59 +375,15 @@ export default function CustomSoftwarePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {solutions.map((solution, index) => (
-              <div
+              <PackageCard
                 key={index}
-                className={`relative bg-white rounded-2xl border-2 p-8 transition-all duration-300 hover:shadow-2xl ${
-                  solution.popular
-                    ? 'border-[#815854] shadow-xl scale-105'
-                    : 'border-gray-200 hover:border-[#815854]'
-                }`}
-              >
-                {solution.popular && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                    <span className="bg-[#815854] text-white text-xs font-bold px-4 py-2 rounded-full">
-                      PALING POPULER
-                    </span>
-                  </div>
-                )}
-
-                <div className="text-center mb-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                    {solution.name}
-                  </h3>
-                  <div className="text-3xl font-bold text-[#815854] mb-1">
-                    {solution.price}
-                  </div>
-                  <div className="text-sm text-gray-500 mb-3">
-                    Timeline: {solution.duration}
-                  </div>
-                  <p className="text-sm text-gray-600">
-                    {solution.description}
-                  </p>
-                </div>
-
-                <ul className="space-y-3 mb-8">
-                  {solution.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-[#815854] flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-gray-700">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <a
-                  href="https://wa.me/6283160581462"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`block w-full py-3 text-center font-semibold rounded-full transition-all duration-300 ${
-                    solution.popular
-                      ? 'bg-[#815854] text-white hover:bg-[#6d4a47]'
-                      : 'bg-white text-[#815854] border-2 border-[#815854] hover:bg-[#815854] hover:text-white'
-                  }`}
-                >
-                  Diskusi Kebutuhan
-                </a>
-              </div>
+                name={solution.name}
+                price={solution.price}
+                duration={solution.duration}
+                description={solution.description}
+                features={solution.features}
+                popular={solution.popular}
+              />
             ))}
           </div>
         </div>
@@ -462,17 +408,12 @@ export default function CustomSoftwarePage() {
 
             <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
               {process.map((item, index) => (
-                <div key={index} className="relative flex flex-col items-center text-center">
-                  <div className="relative z-10 w-24 h-24 bg-[#815854] rounded-full flex items-center justify-center mb-4 shadow-lg">
-                    <span className="text-white text-2xl font-bold">{item.step}</span>
-                  </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-gray-600">
-                    {item.description}
-                  </p>
-                </div>
+                <ProcessStep
+                  key={index}
+                  step={item.step}
+                  title={item.title}
+                  description={item.description}
+                />
               ))}
             </div>
           </div>
@@ -502,7 +443,7 @@ export default function CustomSoftwarePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-[#815854] to-[#6d4a47] relative overflow-hidden">
+      <section className="py-20 bg-linear-to-br from-[#815854] to-[#6d4a47] relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
           <div className="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
