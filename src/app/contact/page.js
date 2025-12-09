@@ -44,26 +44,11 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-[#815854] to-[#6d4a47] text-white py-20">
-        <div className="absolute inset-0 opacity-10">
-          <div 
-            className="absolute inset-0"
-            style={{
-              backgroundImage: `
-                linear-gradient(to right, white 1px, transparent 1px),
-                linear-gradient(to bottom, white 1px, transparent 1px)
-              `,
-              backgroundSize: '40px 40px'
-            }}
-          />
-        </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Hubungi Kami</h1>
-          <p className="text-lg text-white/90 max-w-2xl mx-auto">
-            Tim kami siap membantu Anda. Hubungi kami melalui berbagai channel yang tersedia.
-          </p>
-        </div>
-      </div>
+      <PageHero
+        title="Hubungi Kami"
+        description="Tim kami siap membantu Anda 24/7. Hubungi kami melalui berbagai channel yang tersedia atau isi form di bawah ini."
+        backgroundImage="https://images.pexels.com/photos/8867275/pexels-photo-8867275.jpeg"
+      />
 
       {/* Contact Methods Grid */}
       <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
