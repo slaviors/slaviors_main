@@ -282,15 +282,6 @@ export default function ContactPage() {
                 <h3 className="text-lg font-bold text-gray-900 mb-4">Ikuti Kami</h3>
                 <div className="flex flex-wrap gap-3">
                   <a
-                    href="https://facebook.com/slaviors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center w-10 h-10 bg-gray-100 hover:bg-blue-600 text-gray-700 hover:text-white rounded-lg transition-all duration-300"
-                    title="Facebook"
-                  >
-                    <FaFacebook className="w-5 h-5" />
-                  </a>
-                  <a
                     href="https://instagram.com/slaviors.id"
                     target="_blank"
                     rel="noopener noreferrer"
