@@ -499,13 +499,6 @@ export default function WebsiteModernizationPage() {
               <MessageCircle className="w-5 h-5" />
               Request Free Audit
             </a>
-            <a
-              href="/portfolio"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent text-white font-semibold rounded-full border-2 border-white hover:bg-white hover:text-[#815854] transition-all duration-300"
-            >
-              Lihat Portfolio
-              <ArrowRight className="w-5 h-5" />
-            </a>
           </div>
         </div>
       </section>

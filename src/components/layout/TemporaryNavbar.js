@@ -1,16 +1,25 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import Link from "next/link"
-import Image from "next/image"
-import { 
-  Menu, X, 
-  Code2, Cloud, RefreshCw, Wrench,
-  DollarSign, Package, MonitorCog,
-  BookOpen, Headphones, MessageCircle, Phone,
-  ChevronDown
-} from "lucide-react"
-import { FaWhatsapp } from "react-icons/fa"
+import * as React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import {
+  Menu,
+  X,
+  Code2,
+  Cloud,
+  RefreshCw,
+  Wrench,
+  DollarSign,
+  Package,
+  MonitorCog,
+  BookOpen,
+  Headphones,
+  MessageCircle,
+  Phone,
+  ChevronDown,
+} from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 import {
   NavigationMenu,
@@ -20,8 +29,8 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
-import { cn } from "@/lib/utils"
+} from "@/components/ui/navigation-menu";
+import { cn } from "@/lib/utils";
 
 const layananItems = [
   {
@@ -33,49 +42,25 @@ const layananItems = [
   {
     title: "SaaS Development",
     href: "/services/saas-development",
-    description: "Solusi SaaS custom untuk scale up bisnis dan efisiensi operasional.",
+    description:
+      "Solusi SaaS custom untuk scale up bisnis dan efisiensi operasional.",
     icon: Cloud,
   },
   {
     title: "Custom Software Development",
     href: "/services/custom-software",
-    description: "Aplikasi dan sistem informasi management sesuai kebutuhan bisnis.",
+    description:
+      "Aplikasi dan sistem informasi management sesuai kebutuhan bisnis.",
     icon: MonitorCog,
   },
   {
     title: "Website Modernization",
     href: "/services/website-modernization",
-    description: "Perbarui website lama Anda dengan teknologi terkini (non-WordPress).",
+    description:
+      "Perbarui website lama Anda dengan teknologi terkini (non-WordPress).",
     icon: RefreshCw,
   },
-]
-
-const hargaItems = [
-  {
-    title: "Website Development",
-    href: "/harga/website",
-    description: "Paket harga untuk pembuatan website dan landing page.",
-    icon: Code2,
-  },
-  {
-    title: "SaaS Development",
-    href: "/harga/saas",
-    description: "Harga development SaaS sesuai kompleksitas project.",
-    icon: Cloud,
-  },
-  {
-    title: "Custom Software",
-    href: "/harga/software",
-    description: "Investasi untuk software custom dan sistem management.",
-    icon: Package,
-  },
-  {
-    title: "Maintenance Package",
-    href: "/harga/maintenance",
-    description: "Paket maintenance bulanan untuk website & aplikasi.",
-    icon: DollarSign,
-  },
-]
+];
 
 const supportItems = [
   {
@@ -102,38 +87,36 @@ const supportItems = [
     description: "Hubungi kami untuk konsultasi project Anda.",
     icon: Phone,
   },
-]
+];
 
 export function TemporaryNavbar() {
-  const [isScrolled, setIsScrolled] = React.useState(false)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false)
-  const [openMobileDropdown, setOpenMobileDropdown] = React.useState(null)
-  const [isMounted, setIsMounted] = React.useState(false)
+  const [isScrolled, setIsScrolled] = React.useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+  const [openMobileDropdown, setOpenMobileDropdown] = React.useState(null);
+  const [isMounted, setIsMounted] = React.useState(false);
 
   React.useEffect(() => {
-    setIsMounted(true)
-  }, [])
+    setIsMounted(true);
+  }, []);
 
   React.useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleMobileDropdown = (dropdown) => {
-    setOpenMobileDropdown(openMobileDropdown === dropdown ? null : dropdown)
-  }
+    setOpenMobileDropdown(openMobileDropdown === dropdown ? null : dropdown);
+  };
 
   return (
     <>
       <nav
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-500 animate-slideDown border-b border-gray-100",
-          isScrolled
-            ? "bg-white shadow-lg"
-            : "bg-white"
+          isScrolled ? "bg-white shadow-lg" : "bg-white"
         )}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -155,84 +138,76 @@ export function TemporaryNavbar() {
             <div className="hidden lg:flex items-center">
               {isMounted && (
                 <NavigationMenu>
-                <NavigationMenuList>
-                  <NavigationMenuItem>
-                    <NavigationMenuTrigger className="text-[15px] font-medium">
-                      Layanan
-                    </NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                      <ul className="grid w-[650px] gap-2 p-4 md:grid-cols-2">
-                        {layananItems.map((item) => (
-                          <ListItem
-                            key={item.title}
-                            title={item.title}
-                            href={item.href}
-                            icon={item.icon}
-                          >
-                            {item.description}
-                          </ListItem>
-                        ))}
-                      </ul>
-                    </NavigationMenuContent>
-                  </NavigationMenuItem>
+                  <NavigationMenuList>
+                    <NavigationMenuItem>
+                      <NavigationMenuTrigger className="text-[15px] font-medium">
+                        Layanan
+                      </NavigationMenuTrigger>
+                      <NavigationMenuContent>
+                        <ul className="grid w-[650px] gap-2 p-4 md:grid-cols-2">
+                          {layananItems.map((item) => (
+                            <ListItem
+                              key={item.title}
+                              title={item.title}
+                              href={item.href}
+                              icon={item.icon}
+                            >
+                              {item.description}
+                            </ListItem>
+                          ))}
+                        </ul>
+                      </NavigationMenuContent>
+                    </NavigationMenuItem>
 
-                  <NavigationMenuItem>
-                    <NavigationMenuTrigger className="text-[15px] font-medium">
-                      Harga
-                    </NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                      <ul className="grid w-[550px] gap-2 p-4 md:grid-cols-2">
-                        {hargaItems.map((item) => (
-                          <ListItem
-                            key={item.title}
-                            title={item.title}
-                            href={item.href}
-                            icon={item.icon}
-                          >
-                            {item.description}
-                          </ListItem>
-                        ))}
-                      </ul>
-                    </NavigationMenuContent>
-                  </NavigationMenuItem>
+                    <NavigationMenuItem>
+                      <NavigationMenuLink asChild>
+                        <Link
+                          href="/portfolio"
+                          className={cn(
+                            navigationMenuTriggerStyle(),
+                            "text-[15px] font-medium"
+                          )}
+                        >
+                          Portfolio
+                        </Link>
+                      </NavigationMenuLink>
+                    </NavigationMenuItem>
 
-                  <NavigationMenuItem>
-                    <NavigationMenuLink asChild>
-                      <Link href="/portfolio" className={cn(navigationMenuTriggerStyle(), "text-[15px] font-medium")}>
-                        Portfolio
-                      </Link>
-                    </NavigationMenuLink>
-                  </NavigationMenuItem>
+                    <NavigationMenuItem>
+                      <NavigationMenuLink asChild>
+                        <Link
+                          href="/about"
+                          className={cn(
+                            navigationMenuTriggerStyle(),
+                            "text-[15px] font-medium"
+                          )}
+                        >
+                          Tentang Kami
+                        </Link>
+                      </NavigationMenuLink>
+                    </NavigationMenuItem>
 
-                  <NavigationMenuItem>
-                    <NavigationMenuLink asChild>
-                      <Link href="/about" className={cn(navigationMenuTriggerStyle(), "text-[15px] font-medium")}>
-                        Tentang Kami
-                      </Link>
-                    </NavigationMenuLink>
-                  </NavigationMenuItem>
-
-                  <NavigationMenuItem>
-                    <NavigationMenuTrigger className="text-[15px] font-medium">
-                      Support
-                    </NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                      <ul className="grid w-[550px] gap-2 p-4 md:grid-cols-2">
-                        {supportItems.map((item) => (
-                          <ListItem
-                            key={item.title}
-                            title={item.title}
-                            href={item.href}
-                            icon={item.icon}
-                          >
-                            {item.description}
-                          </ListItem>
-                        ))}
-                      </ul>
-                    </NavigationMenuContent>
-                  </NavigationMenuItem>
-                </NavigationMenuList>
-              </NavigationMenu>
+                    <NavigationMenuItem>
+                      <NavigationMenuTrigger className="text-[15px] font-medium">
+                        Support
+                      </NavigationMenuTrigger>
+                      <NavigationMenuContent>
+                        <ul className="grid w-[550px] gap-2 p-4 md:grid-cols-2">
+                          {supportItems.map((item) => (
+                            <ListItem
+                              key={item.title}
+                              title={item.title}
+                              href={item.href}
+                              icon={item.icon}
+                            >
+                              {item.description}
+                            </ListItem>
+                          ))}
+                        </ul>
+                      </NavigationMenuContent>
+                    </NavigationMenuItem>
+                  </NavigationMenuList>
+                </NavigationMenu>
               )}
             </div>
 
@@ -254,7 +229,11 @@ export function TemporaryNavbar() {
                 className="lg:hidden p-2 text-gray-700 hover:text-[#815854] transition-colors"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               >
-                {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                {isMobileMenuOpen ? (
+                  <X className="w-6 h-6" />
+                ) : (
+                  <Menu className="w-6 h-6" />
+                )}
               </button>
             </div>
           </div>
@@ -294,44 +273,12 @@ export function TemporaryNavbar() {
                       <div className="flex items-start gap-3">
                         <item.icon className="w-5 h-5 mt-0.5 text-[#815854] shrink-0" />
                         <div>
-                          <div className="font-medium text-gray-900">{item.title}</div>
-                          <div className="text-xs text-gray-500 mt-0.5">{item.description}</div>
-                        </div>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {/* Harga Dropdown */}
-            <div className="space-y-1">
-              <button
-                onClick={() => toggleMobileDropdown("harga")}
-                className="w-full flex items-center justify-between px-4 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-50 rounded-lg transition-colors"
-              >
-                <span>Harga</span>
-                <ChevronDown
-                  className={cn(
-                    "w-4 h-4 transition-transform duration-300",
-                    openMobileDropdown === "harga" && "rotate-180"
-                  )}
-                />
-              </button>
-              {openMobileDropdown === "harga" && (
-                <div className="space-y-1 pl-2">
-                  {hargaItems.map((item) => (
-                    <Link
-                      key={item.title}
-                      href={item.href}
-                      className="block px-4 py-3 text-sm hover:bg-[#F9EBDE] rounded-lg transition-colors"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      <div className="flex items-start gap-3">
-                        <item.icon className="w-5 h-5 mt-0.5 text-[#815854] shrink-0" />
-                        <div>
-                          <div className="font-medium text-gray-900">{item.title}</div>
-                          <div className="text-xs text-gray-500 mt-0.5">{item.description}</div>
+                          <div className="font-medium text-gray-900">
+                            {item.title}
+                          </div>
+                          <div className="text-xs text-gray-500 mt-0.5">
+                            {item.description}
+                          </div>
                         </div>
                       </div>
                     </Link>
@@ -383,8 +330,12 @@ export function TemporaryNavbar() {
                       <div className="flex items-start gap-3">
                         <item.icon className="w-5 h-5 mt-0.5 text-[#815854] shrink-0" />
                         <div>
-                          <div className="font-medium text-gray-900">{item.title}</div>
-                          <div className="text-xs text-gray-500 mt-0.5">{item.description}</div>
+                          <div className="font-medium text-gray-900">
+                            {item.title}
+                          </div>
+                          <div className="text-xs text-gray-500 mt-0.5">
+                            {item.description}
+                          </div>
                         </div>
                       </div>
                     </Link>
@@ -441,31 +392,37 @@ export function TemporaryNavbar() {
   );
 }
 
-const ListItem = React.forwardRef(({ className, title, children, icon: Icon, href, ...props }, ref) => {
-  return (
-    <li>
-      <NavigationMenuLink asChild>
-        <Link
-          href={href}
-          ref={ref}
-          className={cn(
-            "block select-none space-y-1 rounded-lg p-3 leading-none no-underline outline-none transition-colors hover:bg-[#F9EBDE] hover:text-[#815854] focus:bg-[#F9EBDE] focus:text-[#815854]",
-            className
-          )}
-          {...props}
-        >
-          <div className="flex items-start gap-3">
-            {Icon && <Icon className="w-5 h-5 mt-0.5 text-[#815854] shrink-0" />}
-            <div className="flex-1">
-              <div className="text-sm font-semibold leading-none mb-1.5">{title}</div>
-              <p className="line-clamp-2 text-xs leading-snug text-gray-600">
-                {children}
-              </p>
+const ListItem = React.forwardRef(
+  ({ className, title, children, icon: Icon, href, ...props }, ref) => {
+    return (
+      <li>
+        <NavigationMenuLink asChild>
+          <Link
+            href={href}
+            ref={ref}
+            className={cn(
+              "block select-none space-y-1 rounded-lg p-3 leading-none no-underline outline-none transition-colors hover:bg-[#F9EBDE] hover:text-[#815854] focus:bg-[#F9EBDE] focus:text-[#815854]",
+              className
+            )}
+            {...props}
+          >
+            <div className="flex items-start gap-3">
+              {Icon && (
+                <Icon className="w-5 h-5 mt-0.5 text-[#815854] shrink-0" />
+              )}
+              <div className="flex-1">
+                <div className="text-sm font-semibold leading-none mb-1.5">
+                  {title}
+                </div>
+                <p className="line-clamp-2 text-xs leading-snug text-gray-600">
+                  {children}
+                </p>
+              </div>
             </div>
-          </div>
-        </Link>
-      </NavigationMenuLink>
-    </li>
-  )
-})
-ListItem.displayName = "ListItem"
+          </Link>
+        </NavigationMenuLink>
+      </li>
+    );
+  }
+);
+ListItem.displayName = "ListItem";
