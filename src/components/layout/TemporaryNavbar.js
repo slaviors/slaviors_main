@@ -26,25 +26,25 @@ import { cn } from "@/lib/utils"
 const layananItems = [
   {
     title: "Website Development",
-    href: "/layanan/website-development",
+    href: "/services/website-development",
     description: "Pembuatan website modern dan landing page untuk bisnis Anda.",
     icon: Code2,
   },
   {
     title: "SaaS Development",
-    href: "/layanan/saas-development",
+    href: "/services/saas-development",
     description: "Solusi SaaS custom untuk scale up bisnis dan efisiensi operasional.",
     icon: Cloud,
   },
   {
     title: "Custom Software Development",
-    href: "/layanan/custom-software",
+    href: "/services/custom-software",
     description: "Aplikasi dan sistem informasi management sesuai kebutuhan bisnis.",
     icon: MonitorCog,
   },
   {
     title: "Website Modernization",
-    href: "/layanan/website-modernization",
+    href: "/services/website-modernization",
     description: "Perbarui website lama Anda dengan teknologi terkini (non-WordPress).",
     icon: RefreshCw,
   },

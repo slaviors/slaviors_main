@@ -12,7 +12,7 @@ export function ServicesSection() {
       description: "Website modern dan landing page yang cepat, responsive, dan SEO-friendly untuk meningkatkan online presence bisnis Anda.",
       features: ["Desain Modern", "Mobile Responsive", "SEO Optimized"],
       image: "/images/website-development.jpg",
-      link: "/layanan/website-development",
+      link: "/services/website-development",
       align: "left"
     },
     {
@@ -22,7 +22,7 @@ export function ServicesSection() {
       description: "Solusi SaaS custom yang scalable untuk efisiensi operasional dan pertumbuhan bisnis yang berkelanjutan.",
       features: ["Cloud-Based", "Scalable", "Multi-User"],
       image: "/images/saas-development.jpg",
-      link: "/layanan/saas-development",
+      link: "/services/saas-development",
       align: "right"
     },
     {
@@ -32,7 +32,7 @@ export function ServicesSection() {
       description: "Aplikasi dan sistem informasi management yang disesuaikan dengan kebutuhan spesifik bisnis Anda.",
       features: ["Fully Custom", "Automation", "Integration"],
       image: "/images/custom-software.jpg",
-      link: "/layanan/custom-software",
+      link: "/services/custom-software",
       align: "left"
     },
     {
@@ -42,7 +42,7 @@ export function ServicesSection() {
       description: "Perbarui website lama Anda dengan teknologi terkini untuk performa dan user experience yang lebih baik.",
       features: ["Modern Tech", "Better Performance", "Improved UX"],
       image: "/images/website-modernization.jpg",
-      link: "/layanan/website-modernization",
+      link: "/services/website-modernization",
       align: "right"
     }
   ];

@@ -86,7 +86,7 @@ export function HeroSection() {
                 Konsultasi Gratis
               </a>
               <a
-                href="#layanan"
+                href="/services"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold text-[#815854] border-2 border-[#815854] rounded-full hover:bg-[#815854] hover:text-white transition-all duration-300"
               >
                 Lihat Layanan

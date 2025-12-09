@@ -114,7 +114,7 @@ export function TemporaryFooter() {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="/layanan/website-development"
+                  href="/services/website-development"
                   className="text-sm text-gray-800 hover:text-[#815854] transition-colors"
                 >
                   Website Development
@@ -122,7 +122,7 @@ export function TemporaryFooter() {
               </li>
               <li>
                 <Link
-                  href="/layanan/saas-development"
+                  href="/services/saas-development"
                   className="text-sm text-gray-800 hover:text-[#815854] transition-colors"
                 >
                   SaaS Development
@@ -130,7 +130,7 @@ export function TemporaryFooter() {
               </li>
               <li>
                 <Link
-                  href="/layanan/custom-software"
+                  href="/services/custom-software"
                   className="text-sm text-gray-800 hover:text-[#815854] transition-colors"
                 >
                   Custom Software Development
@@ -138,7 +138,7 @@ export function TemporaryFooter() {
               </li>
               <li>
                 <Link
-                  href="/layanan/website-modernization"
+                  href="/services/website-modernization"
                   className="text-sm text-gray-800 hover:text-[#815854] transition-colors"
                 >
                   Website Modernization
