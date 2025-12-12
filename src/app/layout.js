@@ -51,7 +51,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/images/og-image.png",
+        url: "https://slaviors.id/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Slaviors Group - Software House Yogyakarta",
@@ -62,7 +62,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Slaviors Group - Jasa Pembuatan Website & Software Yogyakarta",
     description: "Software house Yogyakarta terpercaya. Jasa pembuatan website, SaaS, dan custom software untuk bisnis.",
-    images: ["/images/og-image.jpg"],
+    images: ["https://slaviors.id/images/og-image.png"],
   },
   robots: {
     index: true,
@@ -174,13 +174,13 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
-        
+
         {/* Structured Data - Organization Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
-        
+
         {/* Structured Data - Local Business Schema */}
         <script
           type="application/ld+json"
