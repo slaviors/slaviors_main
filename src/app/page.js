@@ -4,7 +4,7 @@ import { ServicesSection } from "@/components/home/service-section"
 import { WhyChooseUsSection } from "@/components/home/why-choose-us-section"
 
 export const metadata = {
-  title: "Jasa Pembuatan Website & Software Development Yogyakarta | Slaviors Group",
+  title: "Slaviors | Jasa Pembuatan Website & Software Development",
   description: "Software house Yogyakarta terpercaya sejak 2023, menyediakan jasa pembuatan website, SaaS, dan custom software untuk UMKM dan bisnis dengan harga terjangkau.",
   keywords: [
     "jasa pembuatan website Yogyakarta",
