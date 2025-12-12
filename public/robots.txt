@@ -1,0 +1,27 @@
+# robots.txt for Slaviors Group
+# https://slaviors.id
+
+User-agent: *
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Allow important pages
+Allow: /services/
+Allow: /about
+Allow: /contact
+Allow: /portfolio
+Allow: /blog
+
+# Sitemap location
+Sitemap: https://slaviors.id/sitemap.xml
+
+# LLM Context File
+# Learn more: https://llmstxt.org
+X-LLMs-Txt: https://slaviors.id/llms.txt
+
+# Crawl delay (optional, prevents server overload)
+Crawl-delay: 1
