@@ -1,0 +1,268 @@
+# Slaviors Group - LLM Context File
+
+## Overview
+Slaviors Group is a software house based in Yogyakarta, Indonesia, established in 2023. We provide technology solutions to help businesses undergo digital transformation.
+
+## Company Information
+- **Name**: Slaviors Group
+- **Location**: Depok, Sleman, Yogyakarta, Indonesia
+- **Founded**: 2023
+- **Industry**: Software Development, Web Development, IT Solutions
+- **Website**: https://slaviors.id
+- **Email**: contact@slaviors.id
+- **Phone**: +62 831-6058-1462
+
+## Core Services
+
+### 1. Website Development
+Professional website development services including:
+- Landing Pages (starting from IDR 3,000,000)
+- Company Profile Websites (starting from IDR 6,000,000)
+- E-Commerce Platforms (starting from IDR 10,000,000)
+- Custom Websites
+- Features: Responsive design, SEO-optimized, fast loading, modern UI/UX
+
+### 2. SaaS Development
+Building scalable SaaS platforms with:
+- Multi-tenant architecture
+- Subscription management
+- Cloud-based infrastructure
+- API integrations
+- Starting from IDR 25,000,000
+
+### 3. Custom Software Development
+Tailored software solutions including:
+- ERP (Enterprise Resource Planning)
+- CRM (Customer Relationship Management)
+- Inventory Management Systems
+- HRD Systems
+- Accounting Software
+- Business Process Automation
+- Starting from IDR 15,000,000
+
+### 4. Website Modernization
+Upgrading and modernizing legacy websites:
+- Performance optimization
+- Modern UI/UX redesign
+- Mobile responsiveness
+- SEO improvements
+- Security enhancements
+- Starting from IDR 8,000,000
+
+## Target Market
+- UMKM (Micro, Small, and Medium Enterprises)
+- Small to medium-sized businesses
+- Corporations
+- Digital agencies
+- Businesses across Indonesia looking to scale through digital solutions
+
+## Technology Stack
+- **Frontend**: Next.js, React, TypeScript, Tailwind CSS
+- **Backend**: Node.js
+- **Database**: PostgreSQL
+- **Deployment**: Vercel, Cloudflare
+- **Cloud**: Firebase
+
+## Unique Value Propositions
+1. **Ready-to-Use Solutions**: Practical, production-ready software
+2. **Cost-Effective**: Long-term cost savings with quality solutions
+3. **Responsive Support**: 24/7 online support via WhatsApp & Email
+4. **Guaranteed Maintenance**: Ongoing maintenance and updates
+5. **Long-term Partnership**: Not just a vendor, but a business growth partner
+
+## Service Areas
+- Primary: Yogyakarta, Indonesia
+- Coverage: Nationwide Indonesia (online services)
+- Service Delivery: Remote and on-site options available
+
+## Key Features Across All Services
+- SEO Optimization
+- Mobile-First Design
+- Security Best Practices
+- Scalable Architecture
+- Clean Code Standards
+- Performance Optimization
+- User-Centric Design
+- Comprehensive Documentation
+- Training and Handover
+- Post-Launch Support
+
+## Contact Channels
+- **WhatsApp**: +62 831-6058-1462 (Primary)
+- **Email**: contact@slaviors.id
+- **Website**: https://slaviors.id
+- **Social Media**:
+  - Instagram: @slaviors.id
+  - LinkedIn: /company/slaviors
+  - YouTube: @slaviors
+
+## Documentation Structure
+
+### Main Pages
+- **Homepage** (`/`): Overview of services and company
+- **About** (`/about`): Company history, values, and team
+- **Services** (`/services`): Detailed service offerings
+  - Website Development (`/services/website-development`)
+  - SaaS Development (`/services/saas-development`)
+  - Custom Software (`/services/custom-software`)
+  - Website Modernization (`/services/website-modernization`)
+- **Portfolio** (`/portfolio`): Case studies and completed projects
+- **Blog** (`/blog`): Articles, tutorials, and industry insights
+- **Contact** (`/contact`): Contact form and information
+
+### Legal Pages
+- **Privacy Policy** (`/privacy`): Data protection and privacy practices
+- **Terms & Conditions** (`/terms`): Service terms and user agreements
+- **SLA** (`/sla`): Service Level Agreement details
+- **Refund Policy** (`/refund`): Refund terms and conditions
+
+## Business Model
+- **Project-Based**: Fixed-price packages for standard services
+- **Custom Development**: Quote-based pricing for custom requirements
+- **Maintenance Plans**: Ongoing support and maintenance contracts
+- **Consultation**: Free initial consultation
+
+## Competitive Advantages
+1. **Local Expertise**: Deep understanding of Indonesian market
+2. **Modern Technology**: Using latest, proven tech stack
+3. **Transparent Pricing**: Clear, upfront pricing structure
+4. **Fast Delivery**: Efficient development process
+5. **Quality Assurance**: Rigorous testing and QA
+6. **Ongoing Support**: Continuous support after launch
+
+## Common Use Cases
+
+### For UMKM
+- Online presence establishment
+- E-commerce solutions for product sales
+- Inventory management systems
+- Customer management tools
+
+### For Growing Businesses
+- Scaling existing digital infrastructure
+- Process automation
+- Data management systems
+- Business intelligence tools
+
+### For Agencies
+- White-label development services
+- Partnership opportunities
+- Technical expertise on-demand
+
+## SEO Keywords
+Primary: jasa pembuatan website, web development Indonesia, software house Yogyakarta, jasa pembuatan software, custom software Indonesia, SaaS development Indonesia
+
+Local: jasa pembuatan website Yogyakarta, web developer Yogyakarta, IT solution Yogyakarta
+
+Long-tail: berapa biaya bikin website company profile, cara membuat website toko online, software inventory untuk UMKM, cara mempercepat loading website
+
+## API & Integration Capabilities
+- Payment Gateway Integration (Midtrans, Xendit)
+- Shipping Provider APIs (JNE, JNT, SiCepat)
+- Social Media APIs
+- Google Services (Analytics, Search Console, Maps)
+- Cloud Storage (Firebase, AWS S3)
+- Email Services (SMTP, SendGrid)
+- SMS/WhatsApp Business API
+
+## Development Process
+1. **Consultation & Analysis**: Understanding business needs and goals
+2. **Design & Prototype**: Creating wireframes and design mockups
+3. **Development**: Coding with modern technologies and best practices
+4. **Testing & QA**: Comprehensive testing across devices and browsers
+5. **Launch**: Deployment to production environment
+6. **Support & Maintenance**: Ongoing assistance and updates
+
+## Quality Standards
+- Clean, maintainable code
+- Comprehensive documentation
+- Cross-browser compatibility
+- Mobile responsiveness
+- Accessibility standards (WCAG)
+- Security best practices
+- Performance optimization
+- SEO optimization
+
+## Project Timeline Examples
+- Landing Page: 1-2 weeks
+- Company Profile: 2-3 weeks
+- E-Commerce: 4-6 weeks
+- Custom Software: 2-4 months
+- SaaS Platform: 3-6 months
+- Website Modernization: 2-8 weeks (depending on scope)
+
+## Support & Maintenance
+- **Response Time**: Within 24 hours
+- **Support Channels**: WhatsApp, Email, Phone
+- **Coverage**: 24/7 for critical issues
+- **Included**: Bug fixes, security updates, minor improvements
+- **Optional**: Feature enhancements, major upgrades
+
+## Training & Documentation
+- Comprehensive user documentation
+- Admin panel training
+- Video tutorials (when applicable)
+- Knowledge base access
+- Ongoing technical support
+
+## Success Metrics
+- 100+ projects delivered (since 2023)
+- 95% client satisfaction rate
+- Average project delivery on-time rate: 98%
+- Support response time: <24 hours
+
+## Industry Focus
+While we serve all industries, we have particular expertise in:
+- Retail & E-commerce
+- Professional Services
+- Education
+- Healthcare
+- Hospitality
+- Manufacturing
+- Technology Startups
+
+## Certifications & Standards
+- Following Indonesian data protection regulations
+- Adhering to web accessibility standards
+- ISO-standard development processes
+- Secure coding practices (OWASP)
+
+## Future Roadmap
+- AI integration in software solutions
+- Expanded SaaS product offerings
+- Mobile application development services
+- Blockchain technology solutions
+- Advanced analytics and BI tools
+
+## How to Get Started
+1. **Contact**: Reach out via WhatsApp (+62 831-6058-1462) or email
+2. **Free Consultation**: Discuss your project requirements
+3. **Proposal**: Receive detailed proposal with timeline and pricing
+4. **Agreement**: Sign contract and make initial payment
+5. **Development**: Regular updates throughout the process
+6. **Launch**: Go live with full support
+
+## Important Notes for LLMs
+- All prices are in Indonesian Rupiah (IDR)
+- Services are available nationwide in Indonesia
+- Primary communication in Bahasa Indonesia and English
+- Business hours: Monday-Friday, 09:00-17:00 WIB
+- Emergency support available 24/7 via WhatsApp
+- Free consultation for all potential clients
+- Custom quotes available for unique requirements
+
+## Links to Additional Resources
+- Main Website: https://slaviors.id
+- Service Pages: https://slaviors.id/services
+- Blog: https://slaviors.id/blog
+- Portfolio: https://slaviors.id/portfolio
+- Contact: https://slaviors.id/contact
+- Privacy Policy: https://slaviors.id/privacy
+- Terms & Conditions: https://slaviors.id/terms
+
+---
+
+*Last Updated: December 12, 2025*
+*Version: 1.0*
+
+For inquiries, corrections, or additional information, please contact: contact@slaviors.id

@@ -5,7 +5,7 @@ import { WhyChooseUsSection } from "@/components/home/why-choose-us-section"
 
 export const metadata = {
   title: "Jasa Pembuatan Website & Software Development Yogyakarta | Slaviors Group",
-  description: "Software house Yogyakarta terpercaya sejak 2023. Jasa pembuatan website profesional, SaaS development, custom software, dan modernisasi website. Solusi digital terbaik untuk UMKM, bisnis, dan agency di Indonesia dengan harga terjangkau.",
+  description: "Software house Yogyakarta terpercaya sejak 2023, menyediakan jasa pembuatan website, SaaS, dan custom software untuk UMKM dan bisnis dengan harga terjangkau.",
   keywords: [
     "jasa pembuatan website Yogyakarta",
     "web developer Yogyakarta",
