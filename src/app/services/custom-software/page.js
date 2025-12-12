@@ -1,5 +1,3 @@
-"use client"
-
 import React from 'react';
 import { 
   Workflow, Database, Settings, 
@@ -7,6 +5,38 @@ import {
 } from 'lucide-react';
 import { FeatureCard, PackageCard, ProcessStep } from '@/components/services';
 import { CtaSection } from '@/components/home/cta-section';
+
+export const metadata = {
+  title: "Jasa Pembuatan Software Custom & ERP CRM | Software House Yogyakarta",
+  description: "Jasa pembuatan software custom, sistem informasi management, ERP, CRM untuk UMKM dan bisnis. Software inventory, HRD, accounting disesuaikan kebutuhan Anda. Konsultasi gratis!",
+  keywords: [
+    "jasa pembuatan software",
+    "custom software Indonesia",
+    "sistem informasi management",
+    "software ERP CRM",
+    "software inventory untuk UMKM",
+    "aplikasi bisnis custom",
+    "jasa software Yogyakarta",
+    "software akuntansi",
+    "software HRD"
+  ],
+  alternates: {
+    canonical: "https://slaviors.id/services/custom-software",
+  },
+  openGraph: {
+    title: "Jasa Pembuatan Software Custom & ERP CRM | Software House Yogyakarta",
+    description: "Jasa pembuatan software custom, ERP, CRM, sistem informasi management untuk UMKM dan bisnis.",
+    url: "https://slaviors.id/services/custom-software",
+    images: [
+      {
+        url: "/images/og-custom-software.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jasa Pembuatan Software Custom",
+      },
+    ],
+  },
+};
 
 export default function CustomSoftwarePage() {
   const serviceSchema = {

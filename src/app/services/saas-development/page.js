@@ -1,5 +1,3 @@
-"use client"
-
 import React from 'react';
 import { 
   Cloud, Users, Lock, TrendingUp, 
@@ -8,6 +6,37 @@ import {
 } from 'lucide-react';
 import { FloatingStatsCard, FeatureCard, PackageCard, ProcessStep } from '@/components/services';
 import { CtaSection } from '@/components/home/cta-section';
+
+export const metadata = {
+  title: "Jasa Pembuatan SaaS Development Indonesia | Platform SaaS Scalable",
+  description: "Jasa pembuatan platform SaaS yang scalable dan customizable. Solusi SaaS untuk berbagai industri dengan subscription management, multi-tenant, dan cloud architecture. Mulai dari 25 juta.",
+  keywords: [
+    "jasa pembuatan SaaS",
+    "SaaS development Indonesia",
+    "bikin platform SaaS",
+    "software as a service Indonesia",
+    "cloud based software",
+    "subscription software",
+    "multi-tenant application",
+    "SaaS architecture"
+  ],
+  alternates: {
+    canonical: "https://slaviors.id/services/saas-development",
+  },
+  openGraph: {
+    title: "Jasa Pembuatan SaaS Development Indonesia | Platform SaaS Scalable",
+    description: "Jasa pembuatan platform SaaS yang scalable dan customizable untuk berbagai industri.",
+    url: "https://slaviors.id/services/saas-development",
+    images: [
+      {
+        url: "/images/og-saas-development.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jasa Pembuatan SaaS Development",
+      },
+    ],
+  },
+};
 
 export default function SaaSDevelopmentPage() {
   const serviceSchema = {

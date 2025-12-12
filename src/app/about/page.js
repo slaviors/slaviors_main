@@ -1,5 +1,3 @@
-"use client"
-
 import React from 'react';
 import { PageHero } from '@/components/ui/page-hero';
 import { Target, Eye, Award, Users, MessageCircle, ArrowRight } from 'lucide-react';
