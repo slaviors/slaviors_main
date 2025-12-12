@@ -8,7 +8,56 @@ import {
 import { FaWhatsapp, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa"
 import { PageHero } from "@/components/ui/page-hero"
 
+export const metadata = {
+  title: "Hubungi Kami | Konsultasi Gratis Jasa Website & Software Yogyakarta",
+  description: "Hubungi Slaviors Group untuk konsultasi gratis jasa pembuatan website dan software. Lokasi di Yogyakarta, melayani seluruh Indonesia. WhatsApp: +62 831-6058-1462. Online support 24/7.",
+  keywords: [
+    "kontak Slaviors Group",
+    "konsultasi website gratis",
+    "hubungi software house Yogyakarta",
+    "jasa website Yogyakarta contact",
+    "customer service IT solution"
+  ],
+  alternates: {
+    canonical: "https://slaviors.id/contact",
+  },
+  openGraph: {
+    title: "Hubungi Kami | Konsultasi Gratis Jasa Website & Software",
+    description: "Hubungi Slaviors Group untuk konsultasi gratis. WhatsApp: +62 831-6058-1462. Online support 24/7.",
+    url: "https://slaviors.id/contact",
+    images: [
+      {
+        url: "/images/og-contact.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Hubungi Slaviors Group",
+      },
+    ],
+  },
+};
+
 export default function ContactPage() {
+  const contactPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Hubungi Kami",
+    "description": "Halaman kontak Slaviors Group. Hubungi kami untuk konsultasi gratis tentang jasa pembuatan website dan software.",
+    "url": "https://slaviors.id/contact",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Slaviors Group",
+      "telephone": "+62-831-6058-1462",
+      "email": "contact@slaviors.id",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Depok",
+        "addressLocality": "Sleman",
+        "addressRegion": "DI Yogyakarta",
+        "postalCode": "55281",
+        "addressCountry": "ID"
+      }
+    }
+  };
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -44,6 +93,12 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      {/* Structured Data - Contact Page Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageSchema) }}
+      />
+
       {/* Hero Section */}
       <PageHero
         title="Hubungi Kami"

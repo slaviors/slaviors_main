@@ -17,7 +17,113 @@ import {
 } from "@/components/services";
 import { CtaSection } from "@/components/home/cta-section";
 
+export const metadata = {
+  title: "Jasa Pembuatan Website Profesional Yogyakarta | Mulai 3 Juta",
+  description: "Jasa pembuatan website profesional di Yogyakarta. Landing page mulai 3jt, company profile 6jt, e-commerce 10jt. Responsive, SEO-friendly, loading cepat. Gratis domain & hosting 1 tahun. Hubungi kami sekarang!",
+  keywords: [
+    "jasa pembuatan website Yogyakarta",
+    "buat website profesional",
+    "web developer Yogyakarta",
+    "jasa website company profile",
+    "biaya bikin website",
+    "cara membuat website toko online",
+    "website landing page",
+    "jasa website murah",
+    "web design Yogyakarta",
+    "website responsive mobile"
+  ],
+  alternates: {
+    canonical: "https://slaviors.id/services/website-development",
+  },
+  openGraph: {
+    title: "Jasa Pembuatan Website Profesional Yogyakarta | Mulai 3 Juta",
+    description: "Jasa pembuatan website profesional. Landing page, company profile, e-commerce. Responsive, SEO-friendly, loading cepat.",
+    url: "https://slaviors.id/services/website-development",
+    images: [
+      {
+        url: "/images/og-website-development.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jasa Pembuatan Website Profesional",
+      },
+    ],
+  },
+};
+
 export default function WebsiteDevelopmentPage() {
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Website Development",
+    "description": "Jasa pembuatan website profesional, responsive, dan SEO-friendly untuk bisnis. Meliputi landing page, company profile, e-commerce, dan custom website.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Slaviors Group",
+      "url": "https://slaviors.id"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Indonesia"
+    },
+    "serviceType": "Web Development",
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Landing Page",
+        "description": "Website satu halaman untuk promosi produk atau jasa",
+        "price": "3000000",
+        "priceCurrency": "IDR",
+        "url": "https://slaviors.id/services/website-development#landing-page"
+      },
+      {
+        "@type": "Offer",
+        "name": "Company Profile",
+        "description": "Website perusahaan lengkap 5-7 halaman dengan CMS",
+        "price": "6000000",
+        "priceCurrency": "IDR",
+        "url": "https://slaviors.id/services/website-development#company-profile"
+      },
+      {
+        "@type": "Offer",
+        "name": "E-Commerce",
+        "description": "Toko online lengkap dengan sistem pembayaran",
+        "price": "10000000",
+        "priceCurrency": "IDR",
+        "url": "https://slaviors.id/services/website-development#ecommerce"
+      }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Paket Website Development",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Landing Page Package",
+            "description": "1 Halaman responsive, desain custom, form kontak, SEO dasar, Google Analytics, domain & hosting 1 tahun"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Company Profile Package",
+            "description": "5-7 Halaman responsive, desain premium, CMS, SEO advanced, contact form, blog section, domain & hosting 1 tahun, training"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "E-Commerce Package",
+            "description": "Katalog produk unlimited, shopping cart, payment gateway, admin dashboard, order management, customer account, mobile app friendly"
+          }
+        }
+      ]
+    }
+  };
+
   const features = [
     {
       icon: Layout,
@@ -200,6 +306,12 @@ export default function WebsiteDevelopmentPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      {/* Structured Data - Service Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+
       {/* Hero Section */}
       <section className="relative h-[50vh] md:h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">

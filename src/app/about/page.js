@@ -4,7 +4,58 @@ import React from 'react';
 import { PageHero } from '@/components/ui/page-hero';
 import { Target, Eye, Award, Users, MessageCircle, ArrowRight } from 'lucide-react';
 
+export const metadata = {
+  title: "Tentang Slaviors Group | Software House Yogyakarta Sejak 2023",
+  description: "Slaviors Group adalah software house Yogyakarta yang berdiri sejak 2023. Kami menyediakan solusi digital untuk UMKM dan bisnis: jasa pembuatan website, SaaS, dan custom software dengan teknologi modern.",
+  keywords: [
+    "software house Yogyakarta",
+    "tentang Slaviors Group",
+    "IT company Yogyakarta",
+    "web development agency",
+    "software development company",
+    "digital solution Indonesia"
+  ],
+  alternates: {
+    canonical: "https://slaviors.id/about",
+  },
+  openGraph: {
+    title: "Tentang Slaviors Group | Software House Yogyakarta Sejak 2023",
+    description: "Software house Yogyakarta yang menyediakan solusi digital untuk UMKM dan bisnis di Indonesia.",
+    url: "https://slaviors.id/about",
+    images: [
+      {
+        url: "/images/og-about.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Tentang Slaviors Group",
+      },
+    ],
+  },
+};
+
 export default function AboutUsPage() {
+  const aboutPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "Tentang Slaviors Group",
+    "description": "Slaviors Group adalah software house yang berbasis di Yogyakarta, Indonesia. Kami menyediakan layanan teknologi untuk membantu bisnis bertransformasi digital.",
+    "url": "https://slaviors.id/about",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Slaviors Group",
+      "foundingDate": "2023",
+      "foundingLocation": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Yogyakarta",
+          "addressCountry": "ID"
+        }
+      },
+      "description": "Perusahaan teknologi yang menyediakan solusi digital untuk UMKM dan bisnis",
+      "url": "https://slaviors.id"
+    }
+  };
   const values = [
     {
       icon: Target,
@@ -43,6 +94,12 @@ export default function AboutUsPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      {/* Structured Data - About Page Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageSchema) }}
+      />
+
       {/* Hero Section */}
       <PageHero
         title="Tentang Kami"

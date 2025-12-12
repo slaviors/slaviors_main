@@ -2,14 +2,36 @@
 
 import React from 'react';
 import { 
-  Code2, Workflow, Database, Settings, 
-  LineChart, FileText, CheckCircle2, MessageCircle, 
-  ArrowRight, Award, Puzzle, Monitor
+  Workflow, Database, Settings, 
+  LineChart, FileText, CheckCircle2, Puzzle, Monitor
 } from 'lucide-react';
-import { FloatingStatsCard, FeatureCard, PackageCard, ProcessStep } from '@/components/services';
+import { FeatureCard, PackageCard, ProcessStep } from '@/components/services';
 import { CtaSection } from '@/components/home/cta-section';
 
 export default function CustomSoftwarePage() {
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Custom Software Development",
+    "description": "Jasa pembuatan software custom, aplikasi bisnis, ERP, CRM, sistem informasi management yang disesuaikan dengan kebutuhan bisnis Anda.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Slaviors Group",
+      "url": "https://slaviors.id"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Indonesia"
+    },
+    "serviceType": "Custom Software Development",
+    "offers": {
+      "@type": "AggregateOffer",
+      "lowPrice": "15000000",
+      "highPrice": "100000000",
+      "priceCurrency": "IDR",
+      "offerCount": "3"
+    }
+  };
   const features = [
     {
       icon: Puzzle,
@@ -180,9 +202,14 @@ export default function CustomSoftwarePage() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
+      {/* Structured Data - Service Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+
       <section className="relative h-[50vh] md:h-[60vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
+          <div className="absolute inset-0">
           <img
             src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg"
             alt="Custom Software Development"

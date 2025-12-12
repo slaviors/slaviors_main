@@ -8,7 +8,61 @@ import {
 } from 'lucide-react';
 import { FloatingStatsCard, FeatureCard, PackageCard, ProcessStep } from '@/components/services';
 
+export const metadata = {
+  title: "Jasa Modernisasi Website Lama | Upgrade Website Lambat Jadi Cepat",
+  description: "Jasa modernisasi dan upgrade website lama menjadi modern, cepat, dan SEO-friendly. Perbaikan website lambat, tidak responsive, dan design jadul. Mulai dari 8 juta dengan zero downtime.",
+  keywords: [
+    "modernisasi website",
+    "upgrade website lama",
+    "perbaikan website lambat",
+    "cara mempercepat loading website",
+    "website tidak responsive",
+    "redesign website",
+    "improve website performance",
+    "website modernization"
+  ],
+  alternates: {
+    canonical: "https://slaviors.id/services/website-modernization",
+  },
+  openGraph: {
+    title: "Jasa Modernisasi Website Lama | Upgrade Website Lambat Jadi Cepat",
+    description: "Jasa modernisasi website lama menjadi modern, cepat, dan SEO-friendly. Zero downtime, zero data loss.",
+    url: "https://slaviors.id/services/website-modernization",
+    images: [
+      {
+        url: "/images/og-website-modernization.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Jasa Modernisasi Website",
+      },
+    ],
+  },
+};
+
 export default function WebsiteModernizationPage() {
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Website Modernization",
+    "description": "Jasa modernisasi dan upgrade website lama menjadi lebih modern, cepat, responsive, dan SEO-friendly dengan teknologi terkini.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Slaviors Group",
+      "url": "https://slaviors.id"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Indonesia"
+    },
+    "serviceType": "Website Modernization",
+    "offers": {
+      "@type": "AggregateOffer",
+      "lowPrice": "8000000",
+      "highPrice": "25000000",
+      "priceCurrency": "IDR",
+      "offerCount": "3"
+    }
+  };
   const features = [
     {
       icon: Rocket,
@@ -186,7 +240,12 @@ export default function WebsiteModernizationPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
+      {/* Structured Data - Service Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+
       <section className="relative h-[50vh] md:h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img

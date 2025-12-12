@@ -10,6 +10,29 @@ import { FloatingStatsCard, FeatureCard, PackageCard, ProcessStep } from '@/comp
 import { CtaSection } from '@/components/home/cta-section';
 
 export default function SaaSDevelopmentPage() {
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "SaaS Development",
+    "description": "Jasa pembuatan platform SaaS (Software as a Service) yang scalable, multi-tenant, dan cloud-based untuk berbagai industri.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Slaviors Group",
+      "url": "https://slaviors.id"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Indonesia"
+    },
+    "serviceType": "SaaS Development",
+    "offers": {
+      "@type": "Offer",
+      "name": "SaaS Development Package",
+      "description": "Platform SaaS complete dengan subscription management, multi-tenant architecture, dan cloud infrastructure",
+      "price": "25000000",
+      "priceCurrency": "IDR"
+    }
+  };
   const features = [
     {
       icon: Cloud,
@@ -161,7 +184,12 @@ export default function SaaSDevelopmentPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
+      {/* Structured Data - Service Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+
       <section className="relative h-[50vh] md:h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
