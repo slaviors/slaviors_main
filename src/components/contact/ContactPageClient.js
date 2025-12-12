@@ -50,7 +50,16 @@ export default function ContactPageClient() {
     e.preventDefault()
     setIsSubmitting(true)
     
-    // Simulate API call
+    // Format pesan WhatsApp
+    const whatsappMessage = `*Pesan Baru dari Website*%0A%0A*Nama:* ${formData.name}%0A*Email:* ${formData.email}%0A*Pesan:*%0A${formData.message}`
+    
+    // Redirect ke WhatsApp
+    const whatsappUrl = `https://wa.me/6283160581462?text=${whatsappMessage}`
+    
+    // Open WhatsApp in new tab
+    window.open(whatsappUrl, '_blank')
+    
+    // Reset form after short delay
     setTimeout(() => {
       setIsSubmitting(false)
       setSubmitStatus("success")
@@ -60,8 +69,8 @@ export default function ContactPageClient() {
         message: ""
       })
       
-      setTimeout(() => setSubmitStatus(null), 5000)
-    }, 1500)
+      setTimeout(() => setSubmitStatus(null), 3000)
+    }, 500)
   }
 
   return (
@@ -182,11 +191,11 @@ export default function ContactPageClient() {
 
                 {submitStatus === "success" && (
                   <div className="mb-6 bg-green-50 border border-green-200 rounded-lg p-4 flex items-start gap-3">
-                    <Send className="w-5 h-5 text-green-600 mt-0.5 shrink-0" />
+                    <FaWhatsapp className="w-5 h-5 text-green-600 mt-0.5 shrink-0" />
                     <div>
-                      <p className="text-sm font-medium text-green-900">Pesan Terkirim!</p>
+                      <p className="text-sm font-medium text-green-900">Membuka WhatsApp...</p>
                       <p className="text-xs text-green-700 mt-1">
-                        Tim kami akan menghubungi Anda segera.
+                        Pesan Anda akan dikirim melalui WhatsApp.
                       </p>
                     </div>
                   </div>
@@ -244,17 +253,17 @@ export default function ContactPageClient() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full sm:w-auto px-8 py-3 bg-[#815854] text-white font-semibold rounded-lg hover:bg-[#6d4a47] transition-all duration-300 hover:scale-105 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                    className="w-full sm:w-auto px-8 py-3 bg-[#25D366] hover:bg-[#20BA5A] text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                   >
                     {isSubmitting ? (
                       <>
                         <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                        <span>Mengirim...</span>
+                        <span>Membuka WhatsApp...</span>
                       </>
                     ) : (
                       <>
-                        <Send className="w-5 h-5" />
-                        <span>Kirim Pesan</span>
+                        <FaWhatsapp className="w-5 h-5" />
+                        <span>Kirim via WhatsApp</span>
                       </>
                     )}
                   </button>
