@@ -6,13 +6,7 @@ export default function NotFound() {
     <div className="min-h-screen bg-[#F9EBDE] flex items-center justify-center px-4 pt-24 pb-12 relative overflow-hidden">
       {/* Grid Pattern Background */}
       <div className="absolute inset-0 opacity-[0.08]">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `
-            linear-gradient(#815854 1.5px, transparent 1.5px),
-            linear-gradient(90deg, #815854 1.5px, transparent 1.5px)
-          `,
-          backgroundSize: '40px 40px'
-        }}></div>
+        <div className="absolute inset-0 grid-pattern-404"></div>
       </div>
       
       {/* Content */}

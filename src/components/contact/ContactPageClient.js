@@ -162,16 +162,7 @@ export default function ContactPageClient() {
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
           {/* Main grid pattern */}
-          <div 
-            className="absolute inset-0 opacity-30"
-            style={{
-              backgroundImage: `
-                linear-gradient(to right, #815854 1px, transparent 1px),
-                linear-gradient(to bottom, #815854 1px, transparent 1px)
-              `,
-              backgroundSize: '60px 60px'
-            }}
-          />
+          <div className="absolute inset-0 opacity-30 grid-pattern-medium" />
           
           {/* Fade effect on edges */}
           <div className="absolute inset-0 bg-linear-to-r from-white via-transparent to-white opacity-60" />

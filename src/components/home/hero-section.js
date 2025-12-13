@@ -50,13 +50,7 @@ export function HeroSection() {
     <section className="relative min-h-screen flex items-center justify-center bg-white overflow-hidden">
       {/* Subtle Grid Pattern */}
       <div className="absolute inset-0 opacity-[0.02]">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `
-            linear-gradient(#000 1px, transparent 1px),
-            linear-gradient(90deg, #000 1px, transparent 1px)
-          `,
-          backgroundSize: '50px 50px'
-        }}></div>
+        <div className="absolute inset-0 grid-pattern-blog"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 relative z-10">
@@ -127,7 +121,7 @@ export function HeroSection() {
               </div>
               
               {/* Code Content */}
-              <div className="p-6 font-mono text-sm overflow-hidden" style={{ minHeight: '400px' }}>
+              <div className="p-6 font-mono text-sm overflow-hidden min-h-[400px]">
                 <pre className="text-gray-300 leading-relaxed">
                   <code>
                     {typedCode.split('\n').map((line, i) => (
@@ -182,37 +176,6 @@ export function HeroSection() {
         </div>
       </div>
 
-      <style jsx global>{`
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        @keyframes slideInRight {
-          from {
-            opacity: 0;
-            transform: translateX(50px);
-          }
-          to {
-            opacity: 1;
-            transform: translateX(0);
-          }
-        }
-
-        .animate-fadeIn {
-          animation: fadeIn 1s ease-out 0.2s both;
-        }
-
-        .animate-slideInRight {
-          animation: slideInRight 1s ease-out 0.4s both;
-        }
-      `}</style>
     </section>
   );
 }

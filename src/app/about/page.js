@@ -109,13 +109,7 @@ export default function AboutUsPage() {
       <section className="relative py-16 overflow-hidden">
         {/* Grid Pattern Background */}
         <div className="absolute inset-0 opacity-[0.03]">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `
-              linear-gradient(to right, #815854 1px, transparent 1px),
-              linear-gradient(to bottom, #815854 1px, transparent 1px)
-            `,
-            backgroundSize: '40px 40px'
-          }} />
+          <div className="absolute inset-0 grid-pattern-light" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -154,13 +148,7 @@ export default function AboutUsPage() {
       <section className="relative py-16 bg-[#F9EBDE] overflow-hidden">
         {/* Grid Pattern Background */}
         <div className="absolute inset-0 opacity-[0.08]">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `
-              linear-gradient(to right, #815854 1px, transparent 1px),
-              linear-gradient(to bottom, #815854 1px, transparent 1px)
-            `,
-            backgroundSize: '60px 60px'
-          }} />
+          <div className="absolute inset-0 grid-pattern-medium" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -195,10 +183,7 @@ export default function AboutUsPage() {
       <section className="relative py-16 overflow-hidden">
         {/* Subtle dots pattern */}
         <div className="absolute inset-0 opacity-[0.02]">
-          <div className="absolute inset-0" style={{
-            backgroundImage: 'radial-gradient(circle, #815854 1px, transparent 1px)',
-            backgroundSize: '30px 30px'
-          }} />
+          <div className="absolute inset-0 dot-pattern" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -295,10 +280,7 @@ export default function AboutUsPage() {
       <section className="relative py-20 overflow-hidden">
         {/* Subtle radial pattern */}
         <div className="absolute inset-0 opacity-[0.03]">
-          <div className="absolute inset-0" style={{
-            backgroundImage: 'radial-gradient(circle at 20% 50%, #815854 1px, transparent 1px), radial-gradient(circle at 80% 80%, #815854 1px, transparent 1px)',
-            backgroundSize: '50px 50px'
-          }} />
+          <div className="absolute inset-0 radial-pattern" />
         </div>
 
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

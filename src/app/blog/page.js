@@ -10,13 +10,7 @@ export default function BlogPage() {
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-[0.02]">
-            <div className="absolute inset-0" style={{
-              backgroundImage: `
-                linear-gradient(#815854 1px, transparent 1px),
-                linear-gradient(90deg, #815854 1px, transparent 1px)
-              `,
-              backgroundSize: '50px 50px'
-            }}></div>
+            <div className="absolute inset-0 grid-pattern-blog"></div>
           </div>
 
           {/* Floating Icons */}
@@ -76,49 +70,6 @@ export default function BlogPage() {
           </div>
         </section>
       </main>
-
-      <style jsx global>{`
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        @keyframes float {
-          0%, 100% {
-            transform: translateY(0px);
-          }
-          50% {
-            transform: translateY(-20px);
-          }
-        }
-
-        @keyframes float-delayed {
-          0%, 100% {
-            transform: translateY(0px);
-          }
-          50% {
-            transform: translateY(-15px);
-          }
-        }
-
-        .animate-fadeIn {
-          animation: fadeIn 1s ease-out both;
-        }
-
-        .animate-float {
-          animation: float 6s ease-in-out infinite;
-        }
-
-        .animate-float-delayed {
-          animation: float-delayed 8s ease-in-out infinite;
-        }
-      `}</style>
     </>
   );
 }
