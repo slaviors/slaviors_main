@@ -94,6 +94,7 @@ export function TemporaryNavbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const [openMobileDropdown, setOpenMobileDropdown] = React.useState(null);
   const [isMounted, setIsMounted] = React.useState(false);
+  const scrollRafRef = React.useRef(null);
 
   React.useEffect(() => {
     setIsMounted(true);
@@ -101,10 +102,24 @@ export function TemporaryNavbar() {
 
   React.useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      // Cancel previous frame if still pending
+      if (scrollRafRef.current) {
+        cancelAnimationFrame(scrollRafRef.current);
+      }
+      
+      // Throttle with requestAnimationFrame
+      scrollRafRef.current = requestAnimationFrame(() => {
+        setIsScrolled(window.scrollY > 20);
+      });
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (scrollRafRef.current) {
+        cancelAnimationFrame(scrollRafRef.current);
+      }
+    };
   }, []);
 
   const toggleMobileDropdown = (dropdown) => {

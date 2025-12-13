@@ -313,28 +313,28 @@ export default function ContactPageClient() {
                     href="https://instagram.com/slaviors.id"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Kunjungi halaman Instagram Slaviors Group"
                     className="flex items-center justify-center w-10 h-10 bg-gray-100 hover:bg-pink-600 text-gray-700 hover:text-white rounded-lg transition-all duration-300"
-                    title="Instagram"
                   >
-                    <FaInstagram className="w-5 h-5" />
+                    <FaInstagram className="w-5 h-5" aria-hidden="true" />
                   </a>
                   <a
                     href="https://linkedin.com/company/slaviors"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Kunjungi halaman LinkedIn Slaviors Group"
                     className="flex items-center justify-center w-10 h-10 bg-gray-100 hover:bg-blue-700 text-gray-700 hover:text-white rounded-lg transition-all duration-300"
-                    title="LinkedIn"
                   >
-                    <FaLinkedin className="w-5 h-5" />
+                    <FaLinkedin className="w-5 h-5" aria-hidden="true" />
                   </a>
                   <a
                     href="https://youtube.com/@slaviors"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Kunjungi channel YouTube Slaviors Group"
                     className="flex items-center justify-center w-10 h-10 bg-gray-100 hover:bg-red-600 text-gray-700 hover:text-white rounded-lg transition-all duration-300"
-                    title="YouTube"
                   >
-                    <FaYoutube className="w-5 h-5" />
+                    <FaYoutube className="w-5 h-5" aria-hidden="true" />
                   </a>
                 </div>
               </div>

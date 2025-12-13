@@ -1,11 +1,12 @@
 "use client"
 
-import React, { useState } from 'react';
+import React, { useState, useRef, useCallback } from 'react';
 import { Gauge, Lock, Smartphone, Server, TrendingUp, MessageCircle } from 'lucide-react';
 
 export function WhyChooseUsSection() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [hoveredCard, setHoveredCard] = useState(null);
+  const rafRef = useRef(null);
 
   const reasons = [
     {
@@ -46,19 +47,32 @@ export function WhyChooseUsSection() {
     }
   ];
 
-  const handleMouseMove = (e, index) => {
-    const card = e.currentTarget;
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    
-    setMousePosition({ x, y });
-    setHoveredCard(index);
-  };
+  const handleMouseMove = useCallback((e, index) => {
+    // Cancel previous frame if still pending
+    if (rafRef.current) {
+      cancelAnimationFrame(rafRef.current);
+    }
 
-  const handleMouseLeave = () => {
+    // Use requestAnimationFrame to throttle updates
+    rafRef.current = requestAnimationFrame(() => {
+      const card = e.currentTarget;
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      
+      setMousePosition({ x, y });
+      setHoveredCard(index);
+    });
+  }, []);
+
+  const handleMouseLeave = useCallback(() => {
+    // Cancel any pending animation frame
+    if (rafRef.current) {
+      cancelAnimationFrame(rafRef.current);
+      rafRef.current = null;
+    }
     setHoveredCard(null);
-  };
+  }, []);
 
   return (
     <section className="relative py-20 bg-white overflow-hidden">
