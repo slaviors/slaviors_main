@@ -1,4 +1,6 @@
 import { Plus_Jakarta_Sans } from "next/font/google"
+import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { TemporaryNavbar } from "@/components/layout/TemporaryNavbar"
 import { TemporaryFooter } from "@/components/layout/TemporaryFooter"
 import "./globals.css"
@@ -193,6 +195,8 @@ export default function RootLayout({ children }) {
         <TemporaryNavbar />
         {children}
         <TemporaryFooter />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
