@@ -74,33 +74,37 @@ export function TemporaryFooter() {
                 href="https://facebook.com/slaviors"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Kunjungi halaman Facebook Slaviors Group"
                 className="w-9 h-9 flex items-center justify-center bg-white border border-gray-200 rounded-lg hover:bg-[#815854] hover:text-white hover:border-[#815854] transition-all"
               >
-                <Facebook className="w-4 h-4" />
+                <Facebook className="w-4 h-4" aria-hidden="true" />
               </a>
               <a
                 href="https://instagram.com/slaviors.id"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Kunjungi halaman Instagram Slaviors Group"
                 className="w-9 h-9 flex items-center justify-center bg-white border border-gray-200 rounded-lg hover:bg-[#815854] hover:text-white hover:border-[#815854] transition-all"
               >
-                <Instagram className="w-4 h-4" />
+                <Instagram className="w-4 h-4" aria-hidden="true" />
               </a>
               <a
                 href="https://linkedin.com/company/slaviors"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Kunjungi halaman LinkedIn Slaviors Group"
                 className="w-9 h-9 flex items-center justify-center bg-white border border-gray-200 rounded-lg hover:bg-[#815854] hover:text-white hover:border-[#815854] transition-all"
               >
-                <Linkedin className="w-4 h-4" />
+                <Linkedin className="w-4 h-4" aria-hidden="true" />
               </a>
               <a
                 href="https://youtube.com/@slaviors"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Kunjungi channel YouTube Slaviors Group"
                 className="w-9 h-9 flex items-center justify-center bg-white border border-gray-200 rounded-lg hover:bg-[#815854] hover:text-white hover:border-[#815854] transition-all"
               >
-                <Youtube className="w-4 h-4" />
+                <Youtube className="w-4 h-4" aria-hidden="true" />
               </a>
             </div>
           </div>

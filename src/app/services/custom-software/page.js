@@ -334,13 +334,7 @@ export default function CustomSoftwarePage() {
       {/* Features Grid */}
       <section className="py-20 bg-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.03]">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `
-              linear-gradient(#815854 1px, transparent 1px),
-              linear-gradient(90deg, #815854 1px, transparent 1px)
-            `,
-            backgroundSize: '50px 50px'
-          }}></div>
+          <div className="absolute inset-0 grid-pattern-blog"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

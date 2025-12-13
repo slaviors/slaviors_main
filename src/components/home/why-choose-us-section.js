@@ -1,11 +1,12 @@
 "use client"
 
-import React, { useState } from 'react';
+import React, { useState, useRef, useCallback } from 'react';
 import { Gauge, Lock, Smartphone, Server, TrendingUp, MessageCircle } from 'lucide-react';
 
 export function WhyChooseUsSection() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [hoveredCard, setHoveredCard] = useState(null);
+  const rafRef = useRef(null);
 
   const reasons = [
     {
@@ -46,31 +47,38 @@ export function WhyChooseUsSection() {
     }
   ];
 
-  const handleMouseMove = (e, index) => {
-    const card = e.currentTarget;
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    
-    setMousePosition({ x, y });
-    setHoveredCard(index);
-  };
+  const handleMouseMove = useCallback((e, index) => {
+    // Cancel previous frame if still pending
+    if (rafRef.current) {
+      cancelAnimationFrame(rafRef.current);
+    }
 
-  const handleMouseLeave = () => {
+    // Use requestAnimationFrame to throttle updates
+    rafRef.current = requestAnimationFrame(() => {
+      const card = e.currentTarget;
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      
+      setMousePosition({ x, y });
+      setHoveredCard(index);
+    });
+  }, []);
+
+  const handleMouseLeave = useCallback(() => {
+    // Cancel any pending animation frame
+    if (rafRef.current) {
+      cancelAnimationFrame(rafRef.current);
+      rafRef.current = null;
+    }
     setHoveredCard(null);
-  };
+  }, []);
 
   return (
     <section className="relative py-20 bg-white overflow-hidden">
       {/* Subtle Grid Pattern */}
       <div className="absolute inset-0 opacity-[0.02]">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `
-            linear-gradient(#815854 1px, transparent 1px),
-            linear-gradient(90deg, #815854 1px, transparent 1px)
-          `,
-          backgroundSize: '50px 50px'
-        }}></div>
+        <div className="absolute inset-0 grid-pattern-blog"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -111,14 +119,13 @@ export function WhyChooseUsSection() {
               {/* Cursor Shadow Effect */}
               {hoveredCard === index && (
                 <div
-                  className="absolute pointer-events-none rounded-full transition-opacity duration-300"
+                  className="absolute pointer-events-none rounded-full transition-opacity duration-300 cursor-shadow-gradient"
                   style={{
                     width: '200px',
                     height: '200px',
                     left: `${mousePosition.x}px`,
                     top: `${mousePosition.y}px`,
                     transform: 'translate(-50%, -50%)',
-                    background: 'radial-gradient(circle, rgba(129, 88, 84, 0.15) 0%, transparent 70%)',
                     opacity: 1
                   }}
                 />
@@ -191,10 +198,7 @@ export function WhyChooseUsSection() {
 
               {/* 3D Shine Effect */}
               <div 
-                className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
-                style={{
-                  background: 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 50%, rgba(129,88,84,0.05) 100%)'
-                }}
+                className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none card-shine-gradient"
               />
             </div>
           ))}

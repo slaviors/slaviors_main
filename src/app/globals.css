@@ -119,3 +119,115 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Grid Pattern for 404 Page */
+.grid-pattern-404 {
+  background-image: 
+    linear-gradient(#815854 1.5px, transparent 1.5px),
+    linear-gradient(90deg, #815854 1.5px, transparent 1.5px);
+  background-size: 40px 40px;
+}
+
+/* Grid Pattern for About Page */
+.grid-pattern-light {
+  background-image: 
+    linear-gradient(to right, #815854 1px, transparent 1px),
+    linear-gradient(to bottom, #815854 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.grid-pattern-medium {
+  background-image: 
+    linear-gradient(to right, #815854 1px, transparent 1px),
+    linear-gradient(to bottom, #815854 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Dot Pattern for About Page */
+.dot-pattern {
+  background-image: radial-gradient(circle, #815854 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+/* Radial Pattern for CTA Section */
+.radial-pattern {
+  background-image: 
+    radial-gradient(circle at 20% 50%, #815854 1px, transparent 1px),
+    radial-gradient(circle at 80% 80%, #815854 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Grid Pattern for Blog Page */
+.grid-pattern-blog {
+  background-image: 
+    linear-gradient(#815854 1px, transparent 1px),
+    linear-gradient(90deg, #815854 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Blog Page Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes float-delayed {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out both;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-delayed 8s ease-in-out infinite;
+}
+
+/* Why Choose Us Section Effects */
+.cursor-shadow-gradient {
+  background: radial-gradient(circle, rgba(129, 88, 84, 0.15) 0%, transparent 70%);
+}
+
+.card-shine-gradient {
+  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 50%, rgba(129,88,84,0.05) 100%);
+}
+
+/* Hero Section Animations */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slideInRight {
+  animation: slideInRight 1s ease-out 0.4s both;
+}
