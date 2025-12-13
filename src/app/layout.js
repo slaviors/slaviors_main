@@ -76,7 +76,7 @@ export const metadata = {
     },
   },
   verification: {
-    google: "your-google-verification-code", // Ganti dengan kode verifikasi Google Search Console
+    google: "your-google-verification-code",
   },
 }
 
