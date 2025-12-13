@@ -1,6 +1,3 @@
-# robots.txt for Slaviors Group
-# https://slaviors.id
-
 User-agent: *
 Allow: /
 
