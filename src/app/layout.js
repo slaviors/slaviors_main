@@ -89,7 +89,7 @@ export default function RootLayout({ children }) {
     "name": "Slaviors Group",
     "alternateName": "Slaviors",
     "url": "https://slaviors.id",
-    "logo": "https://slaviors.id/assets/logos/with-bg/slaviors-logo.png",
+    "logo": "https://slaviors.id/assets/logos/with-bg/logo-light-bg.png",
     "description": "Software house Yogyakarta yang menyediakan jasa pembuatan website, SaaS development, custom software, dan modernisasi website untuk UMKM dan bisnis di Indonesia.",
     "foundingDate": "2023",
     "address": {
@@ -133,7 +133,7 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Slaviors Group",
-    "image": "https://slaviors.id/assets/logos/with-bg/slaviors-logo.png",
+    "image": "https://slaviors.id/assets/logos/with-bg/logo-light-bg.png",
     "@id": "https://slaviors.id",
     "url": "https://slaviors.id",
     "telephone": "+62-831-6058-1462",
