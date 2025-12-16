@@ -27,7 +27,7 @@ export const metadata = {
     url: "https://slaviors.id",
     images: [
       {
-        url: "/images/og-home.jpg",
+        url: "/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Slaviors Group - Software House Yogyakarta",

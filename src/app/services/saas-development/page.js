@@ -29,7 +29,7 @@ export const metadata = {
     url: "https://slaviors.id/services/saas-development",
     images: [
       {
-        url: "/images/og-saas-development.jpg",
+        url: "/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Jasa Pembuatan SaaS Development",

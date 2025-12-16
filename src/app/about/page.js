@@ -22,7 +22,7 @@ export const metadata = {
     url: "https://slaviors.id/about",
     images: [
       {
-        url: "/images/og-about.jpg",
+        url: "/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Tentang Slaviors Group",

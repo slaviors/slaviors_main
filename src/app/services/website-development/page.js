@@ -39,7 +39,7 @@ export const metadata = {
     url: "https://slaviors.id/services/website-development",
     images: [
       {
-        url: "/images/og-website-development.jpg",
+        url: "/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Jasa Pembuatan Website Profesional",

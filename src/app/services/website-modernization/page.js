@@ -28,7 +28,7 @@ export const metadata = {
     url: "https://slaviors.id/services/website-modernization",
     images: [
       {
-        url: "/images/og-website-modernization.jpg",
+        url: "/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Jasa Modernisasi Website",

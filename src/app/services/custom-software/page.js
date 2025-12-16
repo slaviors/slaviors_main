@@ -29,7 +29,7 @@ export const metadata = {
     url: "https://slaviors.id/services/custom-software",
     images: [
       {
-        url: "/images/og-custom-software.jpg",
+        url: "/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Jasa Pembuatan Software Custom",

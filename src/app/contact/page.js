@@ -19,7 +19,7 @@ export const metadata = {
     url: "https://slaviors.id/contact",
     images: [
       {
-        url: "/images/og-contact.jpg",
+        url: "/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Hubungi Slaviors Group",
