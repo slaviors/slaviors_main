@@ -1,5 +1,3 @@
-"use client"
-
 import React from 'react';
 import { 
   Code2, Cloud, Settings, RefreshCw,
@@ -7,6 +5,46 @@ import {
   Rocket, TrendingUp, Users
 } from 'lucide-react';
 import { FeatureCard, ProcessStep } from '@/components/services';
+
+export const metadata = {
+  title: "Jasa Website & Software Development Seluruh Indonesia | Vendor Terpercaya",
+  description: "Jasa pembuatan website & custom software development melayani Jakarta, Surabaya, Bandung, Jogja, Semarang, Medan, Bali & seluruh Indonesia. Vendor website development terpercaya, 100% online, rating tertinggi.",
+  keywords: [
+    "jasa website indonesia",
+    "jasa pembuatan website jakarta",
+    "jasa website jogja",
+    "jasa pembuatan website surabaya",
+    "jasa website bandung",
+    "vendor website development",
+    "jasa website development",
+    "website developer indonesia",
+    "jasa website company profile",
+    "web developer jogja",
+    "penyedia website",
+    "jasa custom website",
+    "jasa buat website perusahaan",
+    "membuat website perusahaan",
+    "jasa website medan",
+    "jasa website semarang",
+    "jasa pembuatan website bali",
+  ],
+  alternates: {
+    canonical: "https://slaviors.id/services",
+  },
+  openGraph: {
+    title: "Jasa Website Indonesia | Melayani Jakarta Surabaya Bandung & Seluruh Indonesia",
+    description: "Jasa pembuatan website & custom software melayani seluruh Indonesia. Vendor website development profesional, 100% online. Konsultasi gratis!",
+    url: "https://slaviors.id/services",
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Jasa Website Jogja - Slaviors Group",
+      },
+    ],
+  },
+};
 
 export default function ServicesPage() {
   const services = [
@@ -136,11 +174,16 @@ export default function ServicesPage() {
         </div>
 
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+          <div className="inline-block mb-4">
+            <span className="text-sm font-semibold text-white bg-[#815854] px-4 py-2 rounded-full">
+              Melayani Seluruh Indonesia - 100% Online
+            </span>
+          </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">
-            Layanan Kami
+            Jasa Website & Software Development Indonesia
           </h1>
           <p className="text-lg sm:text-xl text-white/90 drop-shadow-md max-w-2xl mx-auto">
-            Solusi teknologi lengkap untuk mengembangkan bisnis Anda di era digital
+            Jasa pembuatan website profesional melayani Jakarta, Surabaya, Bandung, Jogja, Medan, Bali & seluruh Indonesia. 100% online, rating tertinggi!
           </p>
         </div>
       </section>
@@ -154,10 +197,10 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Pilih Layanan yang Sesuai Kebutuhan Anda
+              Jasa Pembuatan Website & Custom Software Jogja
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Dari website hingga aplikasi kompleks, kami siap membantu transformasi digital bisnis Anda
+              Vendor website development terpercaya di Yogyakarta. Dari jasa website company profile hingga aplikasi kompleks, kami siap membantu transformasi digital bisnis Anda
             </p>
           </div>
 

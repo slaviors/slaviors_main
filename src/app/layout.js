@@ -3,6 +3,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { TemporaryNavbar } from "@/components/layout/TemporaryNavbar"
 import { TemporaryFooter } from "@/components/layout/TemporaryFooter"
+import Script from "next/script"
 import "./globals.css"
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -83,13 +84,15 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+  const GA_MEASUREMENT_ID = "G-7VK07Z9QCL"
+
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Slaviors Group",
     "alternateName": "Slaviors",
     "url": "https://slaviors.id",
-    "logo": "https://slaviors.id/assets/logos/with-bg/slaviors-logo.png",
+    "logo": "https://slaviors.id/assets/logos/with-bg/logo-light-bg.png",
     "description": "Software house Yogyakarta yang menyediakan jasa pembuatan website, SaaS development, custom software, dan modernisasi website untuk UMKM dan bisnis di Indonesia.",
     "foundingDate": "2023",
     "address": {
@@ -133,7 +136,7 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Slaviors Group",
-    "image": "https://slaviors.id/assets/logos/with-bg/slaviors-logo.png",
+    "image": "https://slaviors.id/assets/logos/with-bg/logo-light-bg.png",
     "@id": "https://slaviors.id",
     "url": "https://slaviors.id",
     "telephone": "+62-831-6058-1462",
@@ -176,6 +179,26 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
+
+        {/* Google Analytics */}
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_MEASUREMENT_ID}', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
 
         {/* Structured Data - Organization Schema */}
         <script

@@ -3,15 +3,20 @@ import { PageHero } from '@/components/ui/page-hero';
 import { Target, Eye, Award, Users, MessageCircle, ArrowRight } from 'lucide-react';
 
 export const metadata = {
-  title: "Tentang Slaviors Group | Software House Yogyakarta Sejak 2023",
-  description: "Slaviors Group adalah software house Yogyakarta yang berdiri sejak 2023. Kami menyediakan solusi digital untuk UMKM dan bisnis: jasa pembuatan website, SaaS, dan custom software dengan teknologi modern.",
+  title: "Tentang Slaviors Group | Vendor Website Development Indonesia Sejak 2023",
+  description: "Slaviors Group adalah vendor website development dan software house melayani seluruh Indonesia sejak 2023. Berbasis di Yogyakarta, melayani Jakarta, Surabaya, Bandung & kota lainnya 100% online. Jasa pembuatan website, custom software, SaaS dengan teknologi modern. Rating tertinggi!",
   keywords: [
-    "software house Yogyakarta",
+    "software house indonesia",
+    "vendor website development",
+    "jasa website indonesia",
     "tentang Slaviors Group",
-    "IT company Yogyakarta",
+    "IT company Indonesia",
     "web development agency",
     "software development company",
-    "digital solution Indonesia"
+    "penyedia website",
+    "website developer indonesia",
+    "software house yogyakarta",
+    "vendor website jakarta"
   ],
   alternates: {
     canonical: "https://slaviors.id/about",
@@ -22,7 +27,7 @@ export const metadata = {
     url: "https://slaviors.id/about",
     images: [
       {
-        url: "/images/og-about.jpg",
+        url: "/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Tentang Slaviors Group",
