@@ -16,33 +16,40 @@ import {
 import { CtaSection } from "@/components/home/cta-section";
 
 export const metadata = {
-  title: "Jasa Pembuatan Website Profesional Yogyakarta | Mulai 3 Juta",
-  description: "Jasa pembuatan website profesional di Yogyakarta. Landing page mulai 3jt, company profile 6jt, e-commerce 10jt. Responsive, SEO-friendly, loading cepat. Gratis domain & hosting 1 tahun. Hubungi kami sekarang!",
+  title: "Jasa Pembuatan Website Indonesia | Company Profile Mulai 3 Juta",
+  description: "Jasa pembuatan website profesional melayani Jakarta, Surabaya, Bandung, Jogja, Medan, Bali & seluruh Indonesia. Company profile, landing page, e-commerce. Vendor terpercaya, 100% online. Responsive, SEO-friendly, loading cepat. Gratis domain & hosting!",
   keywords: [
-    "jasa pembuatan website Yogyakarta",
-    "buat website profesional",
-    "web developer Yogyakarta",
+    "jasa pembuatan website indonesia",
+    "jasa pembuatan website jakarta",
+    "jasa pembuatan website jogja",
+    "jasa pembuatan website surabaya",
     "jasa website company profile",
-    "biaya bikin website",
-    "cara membuat website toko online",
-    "website landing page",
+    "jasa pembuatan website company profile",
+    "jasa buat website perusahaan",
+    "membuat website perusahaan",
+    "vendor website development",
+    "jasa website development",
+    "jasa pembuatan website profesional",
     "jasa website murah",
-    "web design Yogyakarta",
-    "website responsive mobile"
+    "jasa pembuatan website toko online",
+    "jasa pembuatan website bandung",
+    "jasa website medan",
+    "jasa pembuatan website bali",
+    "website jasa pembuatan"
   ],
   alternates: {
     canonical: "https://slaviors.id/services/website-development",
   },
   openGraph: {
-    title: "Jasa Pembuatan Website Profesional Yogyakarta | Mulai 3 Juta",
-    description: "Jasa pembuatan website profesional. Landing page, company profile, e-commerce. Responsive, SEO-friendly, loading cepat.",
+    title: "Jasa Pembuatan Website Indonesia | Melayani Seluruh Indonesia 100% Online",
+    description: "Jasa pembuatan website profesional melayani Jakarta, Surabaya, Bandung, Jogja & seluruh Indonesia. Landing page, company profile, e-commerce. Responsive, SEO-friendly.",
     url: "https://slaviors.id/services/website-development",
     images: [
       {
         url: "/images/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Jasa Pembuatan Website Profesional",
+        alt: "Jasa Pembuatan Website Jogja - Slaviors Group",
       },
     ],
   },

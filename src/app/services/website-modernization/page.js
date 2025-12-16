@@ -7,17 +7,19 @@ import {
 import { FloatingStatsCard, FeatureCard, PackageCard, ProcessStep } from '@/components/services';
 
 export const metadata = {
-  title: "Jasa Modernisasi Website Lama | Upgrade Website Lambat Jadi Cepat",
-  description: "Jasa modernisasi dan upgrade website lama menjadi modern, cepat, dan SEO-friendly. Perbaikan website lambat, tidak responsive, dan design jadul. Mulai dari 8 juta dengan zero downtime.",
+  title: "Jasa Modernisasi Website Indonesia | Upgrade Website Lambat Jadi Cepat",
+  description: "Jasa modernisasi dan upgrade website lama melayani Jakarta, Surabaya, Bandung, Jogja & seluruh Indonesia. Perbaikan website lambat, tidak responsive, design jadul. 100% online, mulai 8 juta, zero downtime.",
   keywords: [
     "modernisasi website",
+    "jasa modernisasi website jakarta",
     "upgrade website lama",
     "perbaikan website lambat",
     "cara mempercepat loading website",
     "website tidak responsive",
     "redesign website",
     "improve website performance",
-    "website modernization"
+    "website modernization",
+    "jasa redesign website indonesia"
   ],
   alternates: {
     canonical: "https://slaviors.id/services/website-modernization",

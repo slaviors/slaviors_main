@@ -9,16 +9,19 @@ import { CtaSection } from '@/components/home/cta-section';
 
 export const metadata = {
   title: "Jasa Pembuatan SaaS Development Indonesia | Platform SaaS Scalable",
-  description: "Jasa pembuatan platform SaaS yang scalable dan customizable. Solusi SaaS untuk berbagai industri dengan subscription management, multi-tenant, dan cloud architecture. Mulai dari 25 juta.",
+  description: "Jasa pembuatan platform SaaS melayani Jakarta, Surabaya, Bandung, Jogja & seluruh Indonesia. Scalable dan customizable dengan subscription management, multi-tenant, cloud architecture. 100% online. Mulai dari 25 juta.",
   keywords: [
     "jasa pembuatan SaaS",
     "SaaS development Indonesia",
+    "jasa SaaS jakarta",
+    "jasa pembuatan SaaS surabaya",
     "bikin platform SaaS",
     "software as a service Indonesia",
     "cloud based software",
     "subscription software",
     "multi-tenant application",
-    "SaaS architecture"
+    "SaaS architecture",
+    "jasa SaaS bandung"
   ],
   alternates: {
     canonical: "https://slaviors.id/services/saas-development",

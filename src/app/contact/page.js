@@ -1,14 +1,17 @@
 import ContactPageClient from "@/components/contact/ContactPageClient"
 
 export const metadata = {
-  title: "Hubungi Kami | Konsultasi Gratis Jasa Website & Software Yogyakarta",
-  description: "Hubungi Slaviors Group untuk konsultasi gratis jasa pembuatan website dan software. Lokasi di Yogyakarta, melayani seluruh Indonesia. WhatsApp: +62 831-6058-1462. Online support 24/7.",
+  title: "Hubungi Kami | Konsultasi Gratis Jasa Website & Software Seluruh Indonesia",
+  description: "Hubungi Slaviors Group untuk konsultasi gratis jasa pembuatan website dan custom software. Melayani Jakarta, Surabaya, Bandung, Jogja & seluruh Indonesia. 100% online, buka sekarang! WhatsApp: +62 831-6058-1462. Janji temu online 24/7.",
   keywords: [
-    "kontak Slaviors Group",
+    "kontak jasa website indonesia",
+    "hubungi vendor website development",
     "konsultasi website gratis",
-    "hubungi software house Yogyakarta",
-    "jasa website Yogyakarta contact",
-    "customer service IT solution"
+    "jasa website janji temu online",
+    "hubungi jasa website jakarta",
+    "kontak jasa website surabaya",
+    "customer service IT solution",
+    "hubungi software house indonesia"
   ],
   alternates: {
     canonical: "https://slaviors.id/contact",

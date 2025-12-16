@@ -7,18 +7,24 @@ import { FeatureCard, PackageCard, ProcessStep } from '@/components/services';
 import { CtaSection } from '@/components/home/cta-section';
 
 export const metadata = {
-  title: "Jasa Pembuatan Software Custom & ERP CRM | Software House Yogyakarta",
-  description: "Jasa pembuatan software custom, sistem informasi management, ERP, CRM untuk UMKM dan bisnis. Software inventory, HRD, accounting disesuaikan kebutuhan Anda. Konsultasi gratis!",
+  title: "Jasa Custom Software Indonesia | ERP CRM untuk Seluruh Indonesia",
+  description: "Jasa custom website & pembuatan software profesional melayani Jakarta, Surabaya, Bandung, Jogja & seluruh Indonesia. Sistem informasi management, ERP, CRM untuk UMKM dan bisnis. Software inventory, HRD, accounting. 100% online, konsultasi gratis!",
   keywords: [
+    "jasa custom software",
+    "jasa custom website",
     "jasa pembuatan software",
-    "custom software Indonesia",
+    "custom software indonesia",
+    "jasa software jakarta",
+    "jasa pembuatan software jakarta",
     "sistem informasi management",
     "software ERP CRM",
     "software inventory untuk UMKM",
     "aplikasi bisnis custom",
-    "jasa software Yogyakarta",
     "software akuntansi",
-    "software HRD"
+    "software HRD",
+    "vendor development",
+    "jasa software surabaya",
+    "jasa software bandung"
   ],
   alternates: {
     canonical: "https://slaviors.id/services/custom-software",
