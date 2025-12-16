@@ -269,14 +269,14 @@ export default function WebsiteDevelopmentPage() {
     },
     {
       step: "02",
-      title: "Design & Prototype",
+      title: "Planning & Struktur",
       description:
-        "Membuat wireframe dan design mockup untuk approval sebelum development",
+        "Menyusun struktur website, fitur-fitur yang dibutuhkan, dan teknologi yang akan digunakan",
     },
     {
       step: "03",
-      title: "Development",
-      description: "Coding website dengan teknologi modern dan best practices",
+      title: "Development & Design",
+      description: "Coding website dengan UI/UX yang optimal, langsung di-develop dengan teknologi modern dan best practices",
     },
     {
       step: "04",
