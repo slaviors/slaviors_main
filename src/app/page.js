@@ -4,8 +4,8 @@ import { ServicesSection } from "@/components/home/service-section"
 import { WhyChooseUsSection } from "@/components/home/why-choose-us-section"
 
 export const metadata = {
-  title: "Jasa Website Indonesia | Pembuatan Website Jakarta Surabaya Jogja",
-  description: "Jasa pembuatan website profesional melayani seluruh Indonesia - Jakarta, Surabaya, Bandung, Jogja, Semarang, Medan, Bali. Vendor website development terpercaya sejak 2023 untuk UMKM dan bisnis. Company profile, e-commerce, SaaS, 100% online. Rating tertinggi!",
+  title: "Slaviors | Jasa Pembuatan Website & Software Development",
+  description: "Software house Yogyakarta terpercaya sejak 2023, menyediakan jasa pembuatan website, SaaS, dan custom software untuk UMKM dan bisnis dengan harga terjangkau.",
   keywords: [
     "jasa website indonesia",
     "jasa pembuatan website jakarta",
@@ -32,15 +32,15 @@ export const metadata = {
     canonical: "https://slaviors.id",
   },
   openGraph: {
-    title: "Jasa Website Indonesia | Jakarta Surabaya Bandung Jogja & Seluruh Indonesia",
-    description: "Jasa pembuatan website profesional melayani seluruh Indonesia. Vendor website development terpercaya, 100% online. Konsultasi gratis!",
+    title: "Slaviors | Jasa Pembuatan Website & Software Development",
+    description: "Software house Yogyakarta terpercaya. Jasa pembuatan website, SaaS, dan custom software untuk UMKM & bisnis di Indonesia.",
     url: "https://slaviors.id",
     images: [
       {
         url: "/images/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Jasa Website Jogja - Slaviors Group",
+        alt: "Slaviors Group - Software House Yogyakarta",
       },
     ],
   },
